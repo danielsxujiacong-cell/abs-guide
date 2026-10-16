@@ -4,7 +4,7 @@
 
 免费开源的中文街头健身知识库。
 
-永久免费阅读，持续更新。当前版本 **v0.3.0 · Step 3 内容扩写**，已完成十篇正式文章与四册三十二章规划。后续二十二章尚未发布。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
+永久免费阅读，持续更新。当前版本 **v0.4.0 · 第三册完结**，已完成十四篇正式文章与四册三十二章规划。后续十八章尚未发布。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
 
 ## 项目理念
 
@@ -62,10 +62,10 @@
 - [02 俯卧撑：从简单到进阶](src/content/docs/volume-03/02-push-ups.md) · 已发布
 - [03 引体向上：如何练出强壮的背部？](src/content/docs/volume-03/03-pull-ups.md) · 已发布
 - [04 双杠臂屈伸：胸肩和手臂训练](src/content/docs/volume-03/04-dips.md) · 已发布
-- 05 深蹲、弓步与单腿训练 · 计划中
-- 06 腹肌与核心：悬垂举腿及基础训练 · 计划中
-- 07 一周应该练几次？如何安排？ · 计划中
-- 08 如何提高难度、突破瓶颈并恢复？ · 计划中
+- [05 深蹲、弓步与单腿训练](src/content/docs/volume-03/05-legs.md) · 已发布
+- [06 腹肌与核心：悬垂举腿及基础训练](src/content/docs/volume-03/06-core.md) · 已发布
+- [07 一周应该练几次？如何安排？](src/content/docs/volume-03/07-weekly-schedule.md) · 已发布
+- [08 如何提高难度、突破瓶颈并恢复？](src/content/docs/volume-03/08-progression-recovery.md) · 已发布
 
 ### 第四册：12 周街头健身实践计划
 
@@ -119,4 +119,4 @@ npm run dev
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。V0.3.0 新增五篇正式文章与动态验证，后续二十二章计划中，不开发训练工具。
+见 [CHANGELOG.md](CHANGELOG.md)。V0.4.0 完成第三册八篇正文与动态统计，后续十八章计划中，不开发训练工具。

@@ -45,6 +45,13 @@ for (const file of baselineFiles) {
   const original = execFileSync('git', ['show', `c5fa910:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n');
   assert.equal(current, original, `Published article changed: ${file}`);
 }
+// V0.3 published articles are also immutable during the V0.4 expansion.
+const priorBooks = JSON.parse(execFileSync('git', ['show', '7507552:src/data/books.json'], { encoding: 'utf8' }));
+const priorArticles = priorBooks.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
+for (const c of priorArticles) {
+  const file = `src/content/docs/${c.file}`;
+  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `7507552:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.3 article changed: ${file}`);
+}
 let markdownLinks = 0;
 for (const file of [resolve('README.md'), resolve('sources/references.md'), ...markdown]) {
   for (const [, href] of read(file).matchAll(/\[[^\]\n]*\]\(([^)]+)\)/g)) {
@@ -118,6 +125,12 @@ for (const c of published) {
   assert.ok(fragment, `Not indexed: ${c.file}`);
   assert.ok(fragment.content.replaceAll('\u200b', '').includes(c.title), `Search title: ${c.file}`);
 }
+for (const route of ['books', 'read']) {
+  const html = read(`dist/${route}/index.html`);
+  assert.ok(html.includes(`${allChapters.length} 章规划`), `Total count: ${route}`);
+  assert.ok(html.includes(route === 'books' ? `已发布 ${published.length} 章` : `${published.length} 章已发布`), `Published count: ${route}`);
+  assert.ok(html.includes(`${planned.length} 章计划中`), `Planned count: ${route}`);
+}
 assert.ok(read('dist/index.html').includes('好身材，'));
 assert.equal(read('dist/read/index.html').includes('class="chapter-planned"'), planned.length > 0);
-console.log(JSON.stringify({ publishedArticles: published.length, articlesUnchanged: baselineFiles.length, plannedChapters: planned.length, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true }, null, 2));
+console.log(JSON.stringify({ publishedArticles: published.length, articlesUnchanged: priorArticles.length, plannedChapters: planned.length, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true }, null, 2));

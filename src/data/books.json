@@ -132,22 +132,26 @@
       {
         "number": 5,
         "title": "深蹲、弓步与单腿训练",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/05-legs.md"
       },
       {
         "number": 6,
         "title": "腹肌与核心：悬垂举腿及基础训练",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/06-core.md"
       },
       {
         "number": 7,
         "title": "一周应该练几次？如何安排？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/07-weekly-schedule.md"
       },
       {
         "number": 8,
         "title": "如何提高难度、突破瓶颈并恢复？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/08-progression-recovery.md"
       }
     ]
   },

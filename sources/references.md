@@ -80,6 +80,22 @@
 - [原始全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/)；[DOI](https://doi.org/10.3945/ajcn.112.036350)。核对书目、摄入消耗组成及短期体重与水分的讨论。
 - 解释动态适应和非线性变化，不是减脂干预试验。原文披露会议由 ASN 与 ILSI North America 组织资助、未经过该刊编辑常规同行评审；本书将其作为机制解释的补充，不作为唯一处方依据。用于第二册 02。
 
+## V0.4 补充核查 · 2026-10-17
+
+- R1 重新核对 ACSM 官方发布说明与 PubMed 摘要；用于第三册 05–08 的一般渐进训练原则。R2 用于第三册 05、07 的主要肌群强化活动方向。动作筛选条件、具体组次、休息、周计划与减量幅度均为本书实践建议，不冒充机构处方或直接试验结果。
+
+### R11 · 腹部训练与局部脂肪
+
+- Vispute SS, Smith JD, LeCheminant JD, Hurley KS. *The effect of abdominal exercise on abdominal fat.* J Strength Cond Res. 2011;25(9):2559–2564。
+- [PubMed 原始记录](https://pubmed.ncbi.nlm.nih.gov/21804427/)；[DOI](https://doi.org/10.1519/JSC.0b013e3181fb4a46)。PubMed 直接打开触发访问验证，已核对其搜索可见书目与摘要：24 名久坐成年人、六周干预；没有发现腹部脂肪显著减少。
+- 用于第三册 06：不支持单靠腹肌练习保证局部减脂；不把小样本结果解释为任何情境下都不可能有局部变化，不支持具体悬垂动作的安全或疗效。
+
+### R12 · 力竭与非力竭训练
+
+- Grgic J, Schoenfeld BJ, Orazem J, Sabol F. *Effects of resistance training performed to repetition failure or non-failure on muscular strength and hypertrophy: A systematic review and meta-analysis.* J Sport Health Sci. 2022;11(2):202–211。2021 年线上发表。
+- [原始记录与摘要](https://pubmed.ncbi.nlm.nih.gov/33497853/)；[DOI](https://doi.org/10.1016/j.jshs.2021.01.007)。已核对作者、年份、十五项研究与摘要结论。
+- 用于第三册 08：力竭并非力量与肌肉增长的必要前提。纳入研究均为年轻成年人，训练量与经验可能影响比较，不声称所有方案完全等效；“保留 2–3 次”和减量一周为实践安排。
+
 ## V1 · 用户提供的选题线索（未作证据使用）
 
 - 用户提供信息：邵艾伦，2026-09-01，《如何练出薄肌？训练、饮食、减脂一次讲透》。[视频链接](https://www.bilibili.com/video/BV1httT6LEfy/)。
