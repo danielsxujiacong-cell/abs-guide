@@ -201,9 +201,14 @@
     .publication-header nav { gap: 9px; }
     .brand { font-size: 10px; }
     .hero h1 { font-size: 29px; }
-    .cover-title { font-size: 18px; }
+    .book-cover { padding: 12px 10px 10px 14px; }
+    .cover-top { font-size: 6px; padding-bottom: 6px; }
+    .cover-volume { margin-top: 7px; line-height: 1.1; }
+    .cover-volume b { font-size: 23px; }
+    .cover-title { font-size: 16px; line-height: 1.38; margin-top: 7px; }
     .cover-art { display: none; }
-    .cover-bottom { margin-top: auto; }
+    .cover-bottom { margin-top: auto; padding-top: 7px; gap: 4px; font-size: 6px; }
+    .cover-bottom > span { font-size: 5.5px; }
     .section-heading h2 { font-size: 17px; }
     .volume-intro { grid-template-columns: 100px 1fr; gap: 15px; }
   }
