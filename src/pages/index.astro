@@ -2,6 +2,7 @@
 import Publication from '../layouts/Publication.astro';
 import Bookshelf from '../components/Bookshelf.astro';
 import { firstChapter } from '../lib/books';
+import release from '../data/release.json';
 ---
 <Publication title="好身材，不必从健身房开始">
   <section class="hero" aria-labelledby="hero-title">
@@ -17,5 +18,5 @@ import { firstChapter } from '../lib/books';
     <Bookshelf />
   </section>
   <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">给第一次开始的你</p><h2 id="note-title">不用一下子改变全部。<br />先读一章，做好一件事。</h2></div><div><p>先读第一册的前两章，弄清自己的起点；再安排一日三餐、尝试第一次训练，最后完成第 0 周准备。暂时没有单杠，也可以先开始基础动作，再去寻找安全可靠的公园设施。</p><p>这本书永久免费、开源、长期更新。五篇正文已发布，其他章节正在规划中。科学依据与实践建议分开写，不许诺快速变身。</p><a href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 阅读与参与共建 ↗</a></div></section>
-  <div class="update-line"><span class="status-dot" aria-hidden="true"></span><span>2026.10.16 · 五篇正式文章已发布</span><a href="https://github.com/danielsxujiacong-cell/abs-guide/blob/main/CHANGELOG.md">更新日志 ↗</a></div>
+  <div class="update-line" data-release={release.version}><span class="status-dot" aria-hidden="true"></span><span>{release.date} · v{release.version} · {release.note}</span><a href="https://github.com/danielsxujiacong-cell/abs-guide/blob/main/CHANGELOG.md">更新日志 ↗</a></div>
 </Publication>

@@ -1,6 +1,6 @@
 {
   "name": "abs-guide",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -18,7 +18,11 @@
     "astro": "5.18.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "typescript": "^6.0.3"
+    "@astrojs/check": "0.9.4",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "unifont": "0.7.4",
+    "@astrojs/language-server": "2.15.4"
   }
 }

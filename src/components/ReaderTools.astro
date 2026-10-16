@@ -4,7 +4,7 @@ const current = findChapter(Astro.url.pathname);
 const valid = chapters.map((c) => ({ href: c.href, title: c.title }));
 ---
 {current && <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>}
-<script type="application/json" id="reading-config" set:html={JSON.stringify({ current: current ? { href: current.href, title: current.title } : null, valid }).replace(/</g, '\\u003c')} />
+<script is:inline type="application/json" id="reading-config" set:html={JSON.stringify({ current: current ? { href: current.href, title: current.title } : null, valid }).replace(/</g, '\\u003c')} />
 <script>
   function setupReader() {
     const element = document.getElementById('reading-config');
