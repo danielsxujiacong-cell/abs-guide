@@ -15,9 +15,15 @@
 
 - EdgeOne 项目：`abs-guide`，ID `makers-kkh5gbcm0cii`，全球可用区（不含中国大陆）。
 - 首次部署：`dpuw0igggr5i`，提交 `b7bad63`，平台显示“成功”，Node v22.11.0，构建用时 38 秒。
-- 平台默认域名：`abs-guide-1qfatmta.edgeone.dev`。未登录 HTTP 检查返回 401，因此不能作为无需账户的正式阅读入口。
-- 自定义域名 `abs.danielxu.cn` 已加入生产环境；DNS、证书及公网访问仍在验收。
-- v0.2.1 是首次部署成功后用于真实自动同步验收的版本更新；结果待核对平台与线上内容。
+- 平台默认域名：`abs-guide-1qfatmta.edgeone.dev`。直接访问返回 401；控制台说明必须通过其三小时限时预览链接进入。因此不将裸域名作为公开阅读入口，不在仓库记录临时校验参数。
+- 第二次部署：`dpqnd8wj0vq4`，提交 `19f0ca8`，由 Push main 自动触发，平台状态“成功”，构建用时 36 秒。
+- 已在平台提供的真实线上预览读取 `data-release="0.2.1"` 以及“中文搜索与本地续读已加入”更新文案，四册封面正常；点击“开始阅读”进入第一篇文章，正文与参考资料可见。
+- 这证明 GitHub → Astro 构建 → EdgeOne 预览内容自动更新；正式域名公开访问尚未验收，不把限时预览等同于正式上线。
+- 自定义域名首次绑定从“部署中”进入“请添加 CNAME”后，平台弹窗明确提示“记录值异常，建议删除域名后重新添加”，没有提供可用记录值。DNS 查询返回名称不存在。
+- 经用户授权仅重建本次新绑定后，已生成有效目标 `abs.danielxu.cn.pages.dnsoe5.com`，列表曾出现“一键添加”。没有改动其他域名、项目或套餐。
+- 已按用户要求进入 HTTPS → 边缘 HTTPS 证书 → 申请免费证书 → 自动验证并保存。平台确认“证书类型：免费证书”“证书申请中”。没有购买证书、申请付费套餐或新增凭据。
+- 当前域名状态仍为“部署中”，证书“申请中”，HTTPS 配置与域名操作暂时被平台禁用，“一键添加”入口尚未恢复。DNS 查询仍返回名称不存在，正式 HTTPS 暂未通过。
+- 下一步：平台解除配置下发状态后，优先使用其“一键添加”自动配置本域名 CNAME；验证自动签发免费证书，再测试无需登录的 HTTPS 首页、书架、正文、搜索及 HTTP 跳转。不要把“证书申请中”写成“已签发”。若持续不解锁，需要在腾讯云核查本项目域名的下发状态。
 
 ## 自动同步验收方式
 
@@ -28,5 +34,6 @@
 - [构建配置](https://pages.edgeone.ai/document/build-guide)
 - [edgeone.json 字段](https://pages.edgeone.ai/document/edgeone-json)
 - [Astro 静态部署说明](https://pages.edgeone.ai/document/framework-astro)
+- [免费证书与自动验证](https://pages.edgeone.ai/zh/document/apply-for-free-certificate)
 
 核对日期：2026-10-16。控制台 UI 与实际构建结果优先；不保存或提交平台凭据。
