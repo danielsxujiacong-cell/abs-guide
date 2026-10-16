@@ -105,7 +105,8 @@ for (const [i, c] of published.entries()) {
 }
 for (const name of ['02-push-ups', '03-pull-ups', '04-dips']) {
   const text = read(`src/content/docs/volume-03/${name}.md`);
-  for (const field of ['动作名称','难度','目标肌群','起始姿势','动作过程','常见错误','下一难度']) assert.ok(text.includes(field), `Movement teaching: ${field}`);
+  const fields = ['动作名称','难度','目标肌群','起始姿势','动作过程','常见错误','下一难度'];
+  assert.ok(text.includes(`| ${fields.join(' | ')} |`), `Seven-column movement table: ${name}`);
 }
 assert.ok(existsSync('dist/pagefind/pagefind.js'));
 assert.ok(files('dist/pagefind', '.pf_index').length > 0, 'Search index shards missing');
