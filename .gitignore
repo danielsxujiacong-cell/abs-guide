@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime caches and logs
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+
+# Local project outputs
+cache/
+logs/
+dist/
+.astro/
+*.p12
+*.pfx
+credentials*.json
