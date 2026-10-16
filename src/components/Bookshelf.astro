@@ -5,7 +5,7 @@ import BookCover from './BookCover.astro';
 <div class="bookshelf">
   {books.map((book) => <article class="shelf-book">
     <BookCover number={book.number} title={book.title} href={book.href} />
-    <div class="shelf-meta"><span>{book.chapters.filter((c) => c.published).length} / 8 章已发布</span><span>持续更新</span></div>
+    <div class="shelf-meta"><span>{book.chapters.filter((c) => c.published).length} / {book.chapters.length} 章已发布</span><span>持续更新</span></div>
     <p>{book.description}</p>
   </article>)}
 </div>

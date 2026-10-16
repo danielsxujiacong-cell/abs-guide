@@ -18,3 +18,9 @@ export const firstChapter = chapters[0]!;
 export function findChapter(path: string) {
   return chapters.find((chapter) => chapter.href === `${path.replace(/\/$/, '')}/`);
 }
+
+export const publicationCounts = {
+  total: books.reduce((sum, book) => sum + book.chapters.length, 0),
+  published: chapters.length,
+  planned: books.reduce((sum, book) => sum + book.chapters.filter((c) => c.status === "planned").length, 0),
+};

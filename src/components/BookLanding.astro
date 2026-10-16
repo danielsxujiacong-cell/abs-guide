@@ -7,7 +7,7 @@ const published = book.chapters.filter((c) => c.published);
 ---
 <div class="volume-intro">
   <BookCover number={book.number} title={book.title} />
-  <div><p class="eyebrow">第{['一','二','三','四'][book.number-1]}册 · {published.length} / 8 章已发布</p><p class="volume-description">{book.description}</p><a class="button primary" href={published[0]!.href!}>开始阅读本册 <span aria-hidden="true">→</span></a></div>
+  <div><p class="eyebrow">第{['一','二','三','四'][book.number-1]}册 · {published.length} / {book.chapters.length} 章已发布</p><p class="volume-description">{book.description}</p><a class="button primary" href={published[0]!.href!}>开始阅读本册 <span aria-hidden="true">→</span></a></div>
 </div>
 <h2 id="chapters">本册目录</h2>
 <ol class="chapter-list">

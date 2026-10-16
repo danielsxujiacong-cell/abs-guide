@@ -1,12 +1,12 @@
 ---
 import Default from '@astrojs/starlight/components/MarkdownContent.astro';
 import BookLanding from './BookLanding.astro';
-import { books } from '../lib/books';
+import { books, publicationCounts } from '../lib/books';
 const volume = books.find((book) => Astro.url.pathname === book.href);
 const isContents = Astro.url.pathname === '/read/';
 ---
 {volume ? <div class="volume-content"><BookLanding id={volume.id} /></div> : isContents ? <Default>
-  <p>四册书，32 章规划，5 章已发布。建议从第一册开始，按自己的节奏阅读。其余章节计划中。</p>
+  <p>{books.length} 册书，{publicationCounts.total} 章规划，{publicationCounts.published} 章已发布。建议从第一册开始，按自己的节奏阅读。{publicationCounts.planned} 章计划中。</p>
   {books.map((book) => <section><h2 id={book.id}><a href={book.href}>第{['一','二','三','四'][book.number-1]}册：{book.title}</a></h2><ol class="chapter-list">{book.chapters.map((c) => <li>{c.published ? <a href={c.href!}><span class="chapter-number">{String(c.number).padStart(2,'0')}</span><span>{c.title}</span><span class="chapter-state">阅读 ↗</span></a> : <div class="chapter-planned"><span class="chapter-number">{String(c.number).padStart(2,'0')}</span><span>{c.title}</span><span class="chapter-state">计划中</span></div>}</li>)}</ol></section>)}
   <p>通过顶部搜索查找正文内容。阅读记录仅保留在当前浏览器，不需要账户或数据库。</p>
 </Default> : <Default><slot /></Default>}
