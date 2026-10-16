@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve, dirname, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
+import { gunzipSync } from 'node:zlib';
 
 const read = (file) => readFileSync(file, 'utf8');
 function files(dir, extension) {
@@ -11,27 +12,55 @@ const books = JSON.parse(read('src/data/books.json'));
 assert.equal(books.length, 4);
 assert.ok(books.every((book) => book.chapters.length === 8));
 const published = books.flatMap((book) => book.chapters.filter((c) => c.status === 'published'));
-assert.equal(published.length, 5);
+const planned = books.flatMap((book) => book.chapters.filter((c) => c.status === 'planned'));
+const allChapters = books.flatMap((book) => book.chapters);
+assert.equal(published.length + planned.length, allChapters.length, 'Unknown chapter status');
+assert.equal(new Set(books.map((b) => b.id)).size, books.length);
+for (const book of books) {
+  assert.deepEqual(book.chapters.map((c) => c.number), [1,2,3,4,5,6,7,8]);
+  for (const c of book.chapters) {
+    if (c.status === 'published') assert.ok(c.file?.startsWith(`${book.id}/`) && !c.file.includes('..') && c.file.endsWith('.md'), c.title);
+    else assert.ok(!c.file, `Planned chapter must not have a clickable file: ${c.title}`);
+  }
+}
 const markdown = files('src/content/docs', '.md');
 const sourceFiles = published.map((c) => `src/content/docs/${c.file}`);
-assert.equal(markdown.filter((file) => !file.endsWith('index.md')).length, 5);
+assert.equal(new Set(sourceFiles).size, sourceFiles.length, 'Duplicate published file');
+assert.deepEqual(markdown.filter((file) => !file.endsWith('index.md')).sort(), sourceFiles.map((f) => resolve(f)).sort(), 'Unregistered or missing article');
 for (const file of sourceFiles) {
   assert.ok(existsSync(file), file);
+  const text = read(file);
+  const chapter = published.find((c) => file.endsWith(c.file));
+  assert.ok(text.startsWith('---\n') || text.startsWith('---\r\n'), `Frontmatter: ${file}`);
+  assert.ok(text.includes(`title: "${String(chapter.number).padStart(2, '0')} ${chapter.title}"`), `Title: ${file}`);
+  assert.match(text, /description: "[^"\n]+"/);
+  assert.match(text, new RegExp(`sidebar:\\r?\\n  order: ${chapter.number}\\r?\\n`));
+  assert.ok(text.includes('## 参考资料'), `References: ${file}`);
+}
+// The immutable Step 1 corpus is derived from its Git tree, not today's published list.
+const baselineFiles = execFileSync('git', ['ls-tree', '-r', '--name-only', 'c5fa910', 'src/content/docs'], { encoding: 'utf8' }).trim().split('\n').filter((f) => f.endsWith('.md') && !f.endsWith('index.md'));
+assert.ok(baselineFiles.length > 0);
+for (const file of baselineFiles) {
   const current = read(file).replaceAll('\r\n', '\n');
   const original = execFileSync('git', ['show', `c5fa910:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n');
   assert.equal(current, original, `Published article changed: ${file}`);
 }
 let markdownLinks = 0;
-for (const file of [resolve('README.md'), ...markdown]) {
+for (const file of [resolve('README.md'), resolve('sources/references.md'), ...markdown]) {
   for (const [, href] of read(file).matchAll(/\[[^\]\n]*\]\(([^)]+)\)/g)) {
+    if (/^https?:/i.test(href)) {
+      const url = new URL(href);
+      assert.ok(url.protocol === 'https:' && url.hostname.includes('.') && !url.username && !url.password, `Reference URL: ${href}`);
+      continue;
+    }
     if (/^(?:[a-z]+:|#)/i.test(href)) continue;
     assert.ok(existsSync(resolve(dirname(file), href.split('#')[0])), `${file}: ${href}`);
     markdownLinks++;
   }
 }
 const htmlFiles = files('dist', '.html');
-assert.equal(htmlFiles.length, 13);
 const routeFiles = ['index.html', 'books/index.html', 'read/index.html', ...books.map((b) => `${b.id}/index.html`), ...published.map((c) => `${c.file.replace(/\.md$/, '')}/index.html`)];
+assert.deepEqual(htmlFiles.map((f) => relative(resolve('dist'), f).replaceAll('\\', '/')).sort(), [...routeFiles, '404.html'].sort(), 'Unexpected or missing built routes');
 for (const file of routeFiles) assert.ok(existsSync(resolve('dist',file)),file);
 let siteLinks = 0;
 for (const file of htmlFiles) {
@@ -53,8 +82,41 @@ for (const book of books) {
   const html = read(`dist/${book.id}/index.html`);
   assert.equal((html.match(/class="chapter-planned"/g)||[]).length, book.chapters.filter((c) => c.status === 'planned').length);
   assert.equal((html.match(/class="volume-intro"/g)||[]).length, 1);
+  for (const c of book.chapters) {
+    const label = `${String(c.number).padStart(2,'0')} ${c.title}`;
+    for (const file of ['README.md', 'src/content/docs/index.md', `src/content/docs/${book.id}/index.md`]) {
+      const line = read(file).split('\n').find((line) => line.startsWith('- ') && line.includes(label));
+      assert.ok(line, `Missing catalog entry: ${file}: ${label}`);
+      assert.ok(line.includes(c.status === 'published' ? '已发布' : '计划中'), `Catalog status: ${file}: ${label}`);
+      assert.equal(line.includes(']('), c.status === 'published', `Catalog clickability: ${file}: ${label}`);
+      if (c.status === 'published') assert.ok(line.includes(file.endsWith(`${book.id}/index.md`) ? c.file.split('/')[1] : c.file), `Catalog destination: ${file}`);
+    }
+    if (c.status === 'planned') {
+      for (const anchor of html.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/g)) assert.ok(!anchor[0].includes(c.title), `Clickable planned chapter: ${c.title}`);
+    }
+  }
+}
+for (const [i, c] of published.entries()) {
+  const html = read(`dist/${c.file.replace(/\.md$/, '')}/index.html`);
+  assert.ok(html.includes(`https://github.com/danielsxujiacong-cell/abs-guide/blob/main/src/content/docs/${c.file}`), `GitHub source: ${c.file}`);
+  for (const [rel, neighbor] of [['prev', published[i-1]], ['next', published[i+1]]]) {
+    if (neighbor) assert.ok(html.includes(`href="/${neighbor.file.replace(/\.md$/, '')}/" rel="${rel}"`), `Pagination ${rel}: ${c.file}`);
+  }
+}
+for (const name of ['02-push-ups', '03-pull-ups', '04-dips']) {
+  const text = read(`src/content/docs/volume-03/${name}.md`);
+  for (const field of ['动作名称','难度','目标肌群','起始姿势','动作过程','常见错误','下一难度']) assert.ok(text.includes(field), `Movement teaching: ${field}`);
 }
 assert.ok(existsSync('dist/pagefind/pagefind.js'));
+assert.ok(files('dist/pagefind', '.pf_index').length > 0, 'Search index shards missing');
+const searchEntry = JSON.parse(read('dist/pagefind/pagefind-entry.json'));
+assert.equal(searchEntry.languages['zh-cn']?.page_count, markdown.length, 'Chinese search page count');
+const fragments = files('dist/pagefind', '.pf_fragment').map((f) => JSON.parse(gunzipSync(readFileSync(f)).toString().replace(/^pagefind_dcd/, '')));
+for (const c of published) {
+  const fragment = fragments.find((f) => f.url === `/${c.file.replace(/\.md$/, '')}/`);
+  assert.ok(fragment, `Not indexed: ${c.file}`);
+  assert.ok(fragment.content.replaceAll('\u200b', '').includes(c.title), `Search title: ${c.file}`);
+}
 assert.ok(read('dist/index.html').includes('好身材，'));
-assert.ok(read('dist/read/index.html').includes('计划中'));
-console.log(JSON.stringify({ articlesUnchanged: 5, plannedChapters: 27, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true }, null, 2));
+assert.equal(read('dist/read/index.html').includes('class="chapter-planned"'), planned.length > 0);
+console.log(JSON.stringify({ publishedArticles: published.length, articlesUnchanged: baselineFiles.length, plannedChapters: planned.length, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true }, null, 2));

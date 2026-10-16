@@ -64,7 +64,8 @@
       {
         "number": 2,
         "title": "热量是什么，为什么影响体重？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/02-energy.md"
       },
       {
         "number": 3,
@@ -113,17 +114,20 @@
       {
         "number": 2,
         "title": "俯卧撑：从简单到进阶",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/02-push-ups.md"
       },
       {
         "number": 3,
         "title": "引体向上：如何练出强壮的背部？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/03-pull-ups.md"
       },
       {
         "number": 4,
         "title": "双杠臂屈伸：胸肩和手臂训练",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-03/04-dips.md"
       },
       {
         "number": 5,
@@ -162,7 +166,8 @@
       {
         "number": 2,
         "title": "第 1–2 周：建立训练习惯",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-04/02-weeks-one-two.md"
       },
       {
         "number": 3,

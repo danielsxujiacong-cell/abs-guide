@@ -46,6 +46,40 @@
 - 边界：本书食堂菜单、手掌份量参照与牛奶标签算术示例并非 WHO 标准餐单或精确营养数据库。
 - 使用位置：第二册 01。
 
+## V0.3.0 新增资料核对（2026-10-17）
+
+本次重新核对 R1、R2、R4、R5 的官方页面或原始记录。新增五篇文末分别列出实际来源；R1 亦用于三篇动作教学及两周安排的一般训练背景，R4 用于俯卧撑章节，R5 用于热量章节。具体组次、休息、能力门槛与两周组合是本书实践安排，未作为整套方案获得研究直接验证。
+
+### R6 · 引体向上肌电原始研究
+
+- Youdas JW, Amundson CL, Cicero KS, et al. *Surface electromyographic activation patterns and elbow joint motion during a pull-up, chin-up, or perfect-pullup rotational exercise.* J Strength Cond Res. 2010;24(12):3404–3414。
+- [原始记录与摘要](https://pubmed.ncbi.nlm.nih.gov/21068680/)；[DOI](https://doi.org/10.1519/JSC.0b013e3181f1598c)。已核对作者、年份、题名与摘要。
+- 支持背阔肌与屈肘等肌群共同参与、握法可能影响部分肌电指标；不以即时肌电推算长期增肌，更不作为新手悬挂安全证明。用于第三册 03。
+
+### R7 · 引体向上肩部负荷实验与模型
+
+- Urbanczyk CA, Prinold JAI, Reilly P, Bull AMJ. *Avoiding high-risk rotator cuff loading: Muscle force during three pull-up techniques.* Scand J Med Sci Sports. 2020;30(11):2205–2214。
+- [原始摘要](https://pubmed.ncbi.nlm.nih.gov/32715526/)；[DOI](https://doi.org/10.1111/sms.13780)。已核对书目信息及摘要；11 名无肩部病史男性的实验与计算模型。
+- 用于说明不同握法负荷模式不同，不给握法排绝对安全名次，不由模型推算个体伤病概率。用于第三册 03。
+
+### R8 · 臂屈伸动作学与肌电
+
+- McKenzie A, Crowley-McHattan Z, Meir R, Whitting J, Volschenk W. *Bench, Bar, and Ring Dips: Do Kinematics and Muscle Activity Differ?* Int J Environ Res Public Health. 2022;19(20):13211。
+- [原始全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/)；[DOI](https://doi.org/10.3390/ijerph192013211)。核对题名、作者、摘要与动作范围讨论。
+- 不同版本的运动和肌肉活动要求有差别；不是临床伤病随访，也不是零基础试验，不据此推荐吊环或长凳版本。用于第三册 04。
+
+### R9 · ISSN 饮食与身体组成立场文件
+
+- Aragon AA, Schoenfeld BJ, Wildman R, et al. *International society of sports nutrition position stand: diets and body composition.* J Int Soc Sports Nutr. 2017;14:16。
+- [原始全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5470183/)；[DOI](https://doi.org/10.1186/s12970-017-0174-y)。核对立场摘要、年份与能量收支相关讨论。
+- 用于长期能量平衡与身体组成方向，不作为极端低热量食谱或统一热量缺口的依据。用于第二册 02。
+
+### R10 · 动态能量平衡共识文章
+
+- Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR. *Energy balance and its components: implications for body weight regulation.* Am J Clin Nutr. 2012;95(4):989–994。
+- [原始全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/)；[DOI](https://doi.org/10.3945/ajcn.112.036350)。核对书目、摄入消耗组成及短期体重与水分的讨论。
+- 解释动态适应和非线性变化，不是减脂干预试验。原文披露会议由 ASN 与 ILSI North America 组织资助、未经过该刊编辑常规同行评审；本书将其作为机制解释的补充，不作为唯一处方依据。用于第二册 02。
+
 ## V1 · 用户提供的选题线索（未作证据使用）
 
 - 用户提供信息：邵艾伦，2026-09-01，《如何练出薄肌？训练、饮食、减脂一次讲透》。[视频链接](https://www.bilibili.com/video/BV1httT6LEfy/)。
