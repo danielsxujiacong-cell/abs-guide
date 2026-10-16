@@ -1,0 +1,12 @@
+---
+interface Props { number: number; title: string; href?: string; }
+const { number, title, href } = Astro.props;
+const Tag = href ? 'a' : 'div';
+---
+<Tag href={href} class:list={['book-cover', `cover-${number}`]} aria-label={href ? `阅读${title}` : undefined}>
+  <span class="cover-top">薄肌最终指南<span>ABS GUIDE</span></span>
+  <span class="cover-volume">VOL.<b>{String(number).padStart(2, '0')}</b></span>
+  <span class="cover-title">{title}</span>
+  <span class="cover-art" aria-hidden="true"><i></i><i></i><i></i></span>
+  <span class="cover-bottom">街头健身 · 自重训练<span>免费开源 / 持续更新</span></span>
+</Tag>

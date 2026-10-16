@@ -1,0 +1,16 @@
+---
+import { books } from '../lib/books';
+import BookCover from './BookCover.astro';
+const { id } = Astro.props;
+const book = books.find((b) => b.id === id)!;
+const published = book.chapters.filter((c) => c.published);
+---
+<div class="volume-intro">
+  <BookCover number={book.number} title={book.title} />
+  <div><p class="eyebrow">第{['一','二','三','四'][book.number-1]}册 · {published.length} / 8 章已发布</p><p class="volume-description">{book.description}</p><a class="button primary" href={published[0]!.href!}>开始阅读本册 <span aria-hidden="true">→</span></a></div>
+</div>
+<h2 id="chapters">本册目录</h2>
+<ol class="chapter-list">
+  {book.chapters.map((chapter) => <li>{chapter.published ? <a href={chapter.href!}><span class="chapter-number">{String(chapter.number).padStart(2,'0')}</span><span>{chapter.title}</span><span class="chapter-state">阅读 ↗</span></a> : <div class="chapter-planned"><span class="chapter-number">{String(chapter.number).padStart(2,'0')}</span><span>{chapter.title}</span><span class="chapter-state">计划中</span></div>}</li>)}
+</ol>
+<p class="volume-end">从简单版本开始，按自己的能力调整。<a href="/books/">返回书架 →</a></p>

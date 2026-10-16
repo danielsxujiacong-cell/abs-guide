@@ -1,0 +1,40 @@
+---
+import { chapters, findChapter } from '../lib/books';
+const current = findChapter(Astro.url.pathname);
+const valid = chapters.map((c) => ({ href: c.href, title: c.title }));
+---
+{current && <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>}
+<script type="application/json" id="reading-config" set:html={JSON.stringify({ current: current ? { href: current.href, title: current.title } : null, valid }).replace(/</g, '\\u003c')} />
+<script>
+  function setupReader() {
+    const element = document.getElementById('reading-config');
+    if (!element) return;
+    const config = JSON.parse(element.textContent || '{}') as { current: { href: string; title: string } | null; valid: { href: string; title: string }[] };
+    try {
+      const saved = JSON.parse(localStorage.getItem('abs-guide:last-read') || 'null');
+      const match = saved && config.valid.find((c) => c.href === saved.href);
+      if (match && match.href !== config.current?.href) document.querySelectorAll<HTMLAnchorElement>('[data-continue]').forEach((link) => { link.href = match.href; link.textContent = `继续阅读：${match.title} →`; link.hidden = false; });
+      if (config.current) localStorage.setItem('abs-guide:last-read', JSON.stringify(config.current));
+    } catch { /* Storage may be disabled; reading still works. */ }
+    const fill = document.getElementById('reading-progress-fill');
+    const content = document.querySelector<HTMLElement>('.sl-markdown-content');
+    if (fill && content && config.current) {
+      const update = () => {
+        const top = content.getBoundingClientRect().top + window.scrollY;
+        const distance = Math.max(1, content.offsetHeight - window.innerHeight + 100);
+        const progress = Math.max(0, Math.min(1, (window.scrollY - top + 100) / distance));
+        fill.style.transform = `scaleX(${progress})`;
+      };
+      let scheduled = false;
+      window.addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(() => { update(); scheduled = false; }); } }, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    }
+    document.querySelectorAll<HTMLTableElement>('.sl-markdown-content table').forEach((table) => {
+      if (table.parentElement?.classList.contains('table-scroll')) return;
+      const wrap = document.createElement('div'); wrap.className = 'table-scroll'; wrap.tabIndex = 0; wrap.setAttribute('role','region'); wrap.setAttribute('aria-label','表格，可横向滚动');
+      table.before(wrap); wrap.append(table);
+    });
+  }
+  setupReader();
+</script>

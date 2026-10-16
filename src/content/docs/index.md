@@ -1,6 +1,7 @@
 ---
 title: "薄肌最终指南 · ABS GUIDE"
 description: "免费开源、长期更新的中文街头健身指南。"
+slug: read
 sidebar:
   order: 0
 ---

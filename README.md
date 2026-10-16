@@ -4,7 +4,7 @@
 
 免费开源的中文街头健身知识库。
 
-永久免费阅读，持续更新。当前版本 **v0.1.0 · Step 1 开源书籍**，已完成五篇正式文章与四册三十二章规划。后续二十七章尚未发布；本次未建设网站、部署或连接数据库。
+永久免费阅读，持续更新。当前版本 **v0.2.0 · Step 2 在线书籍**，已完成五篇正式文章与四册三十二章规划。后续二十七章尚未发布。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
 
 ## 项目理念
 
@@ -90,14 +90,33 @@
 
 ## 开源协议
 
-原创书籍内容与内容型文档采用 **CC BY-SA 4.0**，详见 [内容许可](CONTENT_LICENSE.md)。未来网站代码及明确归为代码的文件采用 [MIT](LICENSE)。第三方资料、商标与图片保留各自权利，引用不意味着再授权。
+原创书籍内容与内容型文档采用 **CC BY-SA 4.0**，详见 [内容许可](CONTENT_LICENSE.md)。网站代码及明确归为代码的文件采用 [MIT](LICENSE)。第三方资料、商标与图片保留各自权利，引用不意味着再授权。
 
 ## 仓库结构与同步
 
-`src/content/docs/` 是唯一正文来源；`sources/` 登记资料；`public/images/` 为未来有明确授权的图片预留，目前无图片。`docs/` 记录项目状态与交接，不复制正文。Markdown 使用 Starlight 可接入的 frontmatter，当前无需安装前端依赖。
+`src/content/docs/` 是唯一正文来源；`src/data/books.json` 统一维护封面、介绍、章节顺序和发布状态；只有元数据明确发布且真实文件存在的章节才提供阅读链接。`sources/` 登记资料；`public/images/` 为未来授权图片预留。封面为原创 CSS 图形，无第三方图片。
+
+首页 `/` 和书架 `/books/` 是独立出版物页面；总目录 Markdown 保留原文件位置，以 `slug: read` 生成 `/read/`。四册目录 `/volume-01/` 至 `/volume-04/` 与五篇正文沿用既有路径。网站构建时转换 Markdown 链接，GitHub 中的原始相对链接保持有效。
+
+## 本地运行与网站检查
+
+使用 Node.js 22.11.0 或更高版本，安装依赖后运行：
+
+```sh
+npm ci
+npm run dev
+```
+
+发布检查：`npm run check`、`npm run build`、`npm run verify`。生产预览：`npm run preview`。搜索使用构建后的 Pagefind 索引，应在生产预览中测试。`verify` 检查五篇正文与 Step 1 基线一致、规划目录、相对链接、网站路由、小节锚点及产物。
+
+阅读器提供主题切换、中文搜索、当前小节目录、已发布章节翻页、GitHub 原文与 Issue 反馈。仅使用当前浏览器 localStorage 记住最后阅读章节及主题，不上传阅读记录、不主动恢复滚动位置。
+
+## EdgeOne Makers 部署
+
+通过 Git 集成连接本仓库 `main`，安装 `npm ci`，构建 `npm run build`，输出 `dist`。`edgeone.json` 已按官方配置字段声明 Node 22.11.0 与构建参数。采用静态多页面路由，不设置把未知路径重写成首页的 SPA 规则。正式部署、域名和自动同步的实测状态见 [部署记录](docs/DEPLOYMENT.md)。
 
 从另一台电脑继续：Clone 本仓库；开始前检查 `git status`，工作区干净时执行 `git pull --ff-only`；保留本地工作，不强制覆盖。完成修改后检查内容与许可，提交并 Push。GitHub 是最终项目材料的同步位置。
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。本次只完成 Step 1；Step 2 将复用同一套 Markdown，需另行开始。
+见 [CHANGELOG.md](CHANGELOG.md)。Step 2 仅建设阅读网站，不扩写剩余二十七章，也不开发训练工具。

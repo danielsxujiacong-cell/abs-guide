@@ -17,6 +17,8 @@ Copyright © 2026 ABS GUIDE 项目贡献者。
 | README、CHANGELOG、CONTRIBUTING、`sources/` 和 `docs/` 中的原创内容型文字 | CC BY-SA 4.0 |
 | 当前技术操作说明 AGENTS.md、`.gitignore`、`.gitattributes`，以及未来网站源代码、脚本与代码配置 | MIT，见 LICENSE |
 | 原创图片与其他非代码素材 | 仅在有明确标记时按标记许可；当前没有发布图片 |
+| `src/data/books.json` 中原创书名、目录和介绍文字，组件中的原创出版物介绍文字 | CC BY-SA 4.0；承载它们的组件结构与样式代码为 MIT |
+| `public/favicon.svg` 原创标志及 CSS 原创几何封面图形 | MIT |
 | 第三方论文、视频、引文、图片、商标及其链接目标 | 各自原有权利，不因引用而获再授权 |
 
 仅因文件位于 `public/images/` 并不表示其具有内容许可。未来引入素材时必须逐项登记来源、作者、许可和修改情况。代码中的文章文字仍属于内容范围，不能通过复制进组件改为 MIT。

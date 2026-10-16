@@ -1,0 +1,11 @@
+---
+import { chapters, findChapter } from '../lib/books';
+const current = findChapter(Astro.url.pathname);
+const index = chapters.findIndex((c) => c.href === current?.href);
+const previous = index > 0 ? chapters[index-1] : null;
+const next = index >= 0 ? chapters[index+1] : null;
+---
+{current && <nav class="chapter-pagination" aria-label="章节翻页">
+  {previous ? <a href={previous.href!} rel="prev"><span>← 上一章</span><strong>{previous.title}</strong></a> : <a href="/books/"><span>← 从书架开始</span><strong>浏览四册书籍</strong></a>}
+  {next ? <a href={next.href!} rel="next"><span>下一章 →</span><strong>{next.title}</strong></a> : <a href="/books/"><span>已读到当前最新章节</span><strong>返回书架 →</strong></a>}
+</nav>}

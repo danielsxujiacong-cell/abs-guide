@@ -1,0 +1,199 @@
+[
+  {
+    "id": "volume-01",
+    "number": 1,
+    "title": "从零开始认识薄肌",
+    "description": "从身材焦虑中退一步，认识身体，找到适合你的起点。",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "到底什么是薄肌？",
+        "file": "volume-01/01-what-is-lean.md",
+        "status": "published"
+      },
+      {
+        "number": 2,
+        "title": "我应该从哪里开始？",
+        "file": "volume-01/02-where-to-start.md",
+        "status": "published"
+      },
+      {
+        "number": 3,
+        "title": "自重健身为什么适合普通人？",
+        "status": "planned"
+      },
+      {
+        "number": 4,
+        "title": "不去健身房，也能练出好身材吗？",
+        "status": "planned"
+      },
+      {
+        "number": 5,
+        "title": "新手最容易犯的十个错误",
+        "status": "planned"
+      },
+      {
+        "number": 6,
+        "title": "多久才能看到身体变化？",
+        "status": "planned"
+      },
+      {
+        "number": 7,
+        "title": "如何判断自己有没有进步？",
+        "status": "planned"
+      },
+      {
+        "number": 8,
+        "title": "开始健身前的准备清单",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "volume-02",
+    "number": 2,
+    "title": "吃出适合自己的好身材",
+    "description": "把食堂、外卖和家常饭，变成支持训练的日常三餐。",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "普通人的一日三餐到底怎么吃？",
+        "file": "volume-02/01-daily-meals.md",
+        "status": "published"
+      },
+      {
+        "number": 2,
+        "title": "热量是什么，为什么影响体重？",
+        "status": "planned"
+      },
+      {
+        "number": 3,
+        "title": "蛋白质应该吃多少、怎么吃？",
+        "status": "planned"
+      },
+      {
+        "number": 4,
+        "title": "碳水和脂肪真的需要害怕吗？",
+        "status": "planned"
+      },
+      {
+        "number": 5,
+        "title": "想增加肌肉，饮食怎么调整？",
+        "status": "planned"
+      },
+      {
+        "number": 6,
+        "title": "想减少脂肪，怎么吃才可持续？",
+        "status": "planned"
+      },
+      {
+        "number": 7,
+        "title": "外卖、食堂和朋友聚餐怎么吃？",
+        "status": "planned"
+      },
+      {
+        "number": 8,
+        "title": "蛋白粉、肌酸和常见饮食误区",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "volume-03",
+    "number": 3,
+    "title": "街头健身与自重训练指南",
+    "description": "用自己的体重，练习推、拉、腿与核心。从简单版本开始。",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "第一次自重训练，应该从哪里开始？",
+        "file": "volume-03/01-first-workout.md",
+        "status": "published"
+      },
+      {
+        "number": 2,
+        "title": "俯卧撑：从简单到进阶",
+        "status": "planned"
+      },
+      {
+        "number": 3,
+        "title": "引体向上：如何练出强壮的背部？",
+        "status": "planned"
+      },
+      {
+        "number": 4,
+        "title": "双杠臂屈伸：胸肩和手臂训练",
+        "status": "planned"
+      },
+      {
+        "number": 5,
+        "title": "深蹲、弓步与单腿训练",
+        "status": "planned"
+      },
+      {
+        "number": 6,
+        "title": "腹肌与核心：悬垂举腿及基础训练",
+        "status": "planned"
+      },
+      {
+        "number": 7,
+        "title": "一周应该练几次？如何安排？",
+        "status": "planned"
+      },
+      {
+        "number": 8,
+        "title": "如何提高难度、突破瓶颈并恢复？",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "volume-04",
+    "number": 4,
+    "title": "12 周街头健身实践计划",
+    "description": "先做好第 0 周准备，再逐步建立能长期坚持的训练节奏。",
+    "chapters": [
+      {
+        "number": 1,
+        "title": "第 0 周：开始你的 12 周训练计划",
+        "file": "volume-04/01-week-zero.md",
+        "status": "published"
+      },
+      {
+        "number": 2,
+        "title": "第 1–2 周：建立训练习惯",
+        "status": "planned"
+      },
+      {
+        "number": 3,
+        "title": "第 3–4 周：掌握基础自重动作",
+        "status": "planned"
+      },
+      {
+        "number": 4,
+        "title": "第 5–6 周：逐渐增加训练难度",
+        "status": "planned"
+      },
+      {
+        "number": 5,
+        "title": "第 7–8 周：检查自己的进步",
+        "status": "planned"
+      },
+      {
+        "number": 6,
+        "title": "第 9–10 周：调整训练和饮食",
+        "status": "planned"
+      },
+      {
+        "number": 7,
+        "title": "第 11–12 周：完成第一个训练周期",
+        "status": "planned"
+      },
+      {
+        "number": 8,
+        "title": "12 周之后，如何继续进步？",
+        "status": "planned"
+      }
+    ]
+  }
+]

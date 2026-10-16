@@ -1,0 +1,38 @@
+---
+import '../styles/site.css';
+import SiteTitle from '../components/SiteTitle.astro';
+import ReaderTools from '../components/ReaderTools.astro';
+const { title, description = '免费开源、长期更新的中文街头健身指南。' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title} · 薄肌最终指南</title>
+    <script is:inline>
+      try { const t = localStorage.getItem('starlight-theme') || 'auto'; document.documentElement.dataset.theme = t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t; } catch {}
+    </script>
+  </head>
+  <body class="publication">
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="publication-header">
+      <SiteTitle />
+      <nav aria-label="主要导航"><a href="/books/">书架</a><a href="/read/">目录与搜索</a><label class="theme-control"><span class="sr-only">外观</span><select id="publication-theme" aria-label="外观"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label></nav>
+    </header>
+    <main id="main" class="publication-main"><slot /></main>
+    <footer class="publication-footer"><span>ABS GUIDE · 薄肌最终指南</span><span>内容 CC BY-SA 4.0 · 代码 MIT</span><a href="https://github.com/danielsxujiacong-cell/abs-guide">GitHub ↗</a></footer>
+    <ReaderTools />
+    <script>
+      const select = document.querySelector<HTMLSelectElement>('#publication-theme');
+      let mode = 'auto';
+      try { mode = localStorage.getItem('starlight-theme') || 'auto'; } catch {}
+      const apply = () => { document.documentElement.dataset.theme = mode === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : mode; };
+      if (select) { select.value = mode; select.addEventListener('change', () => { mode = select.value; try { localStorage.setItem('starlight-theme', mode === 'auto' ? '' : mode); } catch {} apply(); }); }
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply);
+    </script>
+  </body>
+</html>

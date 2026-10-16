@@ -1,0 +1,15 @@
+---
+import { repository, findChapter } from '../lib/books';
+import ReaderTools from './ReaderTools.astro';
+import ChapterPagination from './ChapterPagination.astro';
+const chapter = findChapter(Astro.url.pathname);
+const source = chapter ? `${repository}/blob/main/src/content/docs/${chapter.file}` : `${repository}/tree/main/src/content/docs`;
+const issue = `${repository}/issues/new?title=${encodeURIComponent(`内容反馈：${chapter?.title || '薄肌最终指南'}`)}&body=${encodeURIComponent(`页面：${Astro.url.pathname}\n\n问题描述：\n\n建议修改及依据：\n`)}`;
+---
+<footer class="reader-footer">
+  <ChapterPagination />
+  <div class="reader-source"><a href={source}>在 GitHub 查看原文 ↗</a><a href={issue}>反馈错误 ↗</a></div>
+  <p>免费阅读 · 内容 CC BY-SA 4.0 · 无需账户</p>
+  <a data-continue class="continue-link" hidden>继续阅读</a>
+</footer>
+<ReaderTools />
