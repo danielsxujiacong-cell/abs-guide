@@ -52,6 +52,18 @@ for (const c of priorArticles) {
   const file = `src/content/docs/${c.file}`;
   assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `eb740d25a6d2334d43b4c7675d376b8651bc49aa:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.4 article changed: ${file}`);
 }
+// Keep the earlier guards and also protect all articles published before V0.6.
+const v05Ref = 'ed5ed7f4b55ca17c085a2c6d8675dd7bbed39a38';
+const v05Books = JSON.parse(execFileSync('git', ['show', `${v05Ref}:src/data/books.json`], { encoding: 'utf8' }));
+const v05Articles = v05Books.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
+for (const c of v05Articles) {
+  const file = `src/content/docs/${c.file}`;
+  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `${v05Ref}:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.5 article changed: ${file}`);
+}
+const faviconPath = '/favicon-flex-v060.svg';
+const favicon = read(`public${faviconPath}`);
+assert.ok(favicon.includes('💪') && !favicon.includes('>A.</text>'), 'Flex emoji favicon');
+assert.equal(read('public/favicon.svg'), favicon, 'Legacy icon path must not serve the old logo');
 let markdownLinks = 0;
 for (const file of [resolve('README.md'), resolve('sources/references.md'), ...markdown]) {
   for (const [, href] of read(file).matchAll(/\[[^\]\n]*\]\(([^)]+)\)/g)) {
@@ -72,6 +84,9 @@ for (const file of routeFiles) assert.ok(existsSync(resolve('dist',file)),file);
 let siteLinks = 0;
 for (const file of htmlFiles) {
   const html = read(file);
+  const iconLinks = [...html.matchAll(/<link\b[^>]*\brel="(?:shortcut )?icon"[^>]*>/g)].map((m) => m[0]);
+  assert.equal(iconLinks.length, 1, `Single favicon: ${file}`);
+  assert.ok(iconLinks[0].includes(`href="${faviconPath}"`) && iconLinks[0].includes('image/svg+xml'), `Versioned SVG favicon: ${file}`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]);
   assert.equal(new Set(ids).size, ids.length, `Duplicate IDs: ${file}`);
   for (const [, href] of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
@@ -133,4 +148,4 @@ for (const route of ['books', 'read']) {
 }
 assert.ok(read('dist/index.html').includes('好身材，'));
 assert.equal(read('dist/read/index.html').includes('class="chapter-planned"'), planned.length > 0);
-console.log(JSON.stringify({ publishedArticles: published.length, articlesUnchanged: priorArticles.length, plannedChapters: planned.length, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true }, null, 2));
+console.log(JSON.stringify({ publishedArticles: published.length, articlesUnchanged: v05Articles.length, plannedChapters: planned.length, markdownLinks, htmlPages: htmlFiles.length, siteLinks, searchIndex: true, faviconPages: htmlFiles.length }, null, 2));

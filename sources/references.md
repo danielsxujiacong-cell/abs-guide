@@ -143,3 +143,40 @@
 - 第一批 03–05：区分基本参考与运动参考；核对体重乘法、食物可食份量与生熟状态；三餐案例不伪造总量；增肌不保证每周速度，未把高能量食品或极端增重包装为最佳方案。
 - 第二批 06–08：没有极低热量菜单、低体脂崇拜或局部减脂承诺；十类外食场景逐一含正常吃、增肌、减脂与省钱选择；肌酸剂量明确为健康成人研究信息，含禁照搬人群及不适边界，没有品牌和购买链接。
 - 两批均检查原创行文、九项写作要素、章节分工与相对链接；六篇完整正文均超过约 2000 汉字。资料核对支持文中限定后的结论，不等于临床个体营养处方，也不宣称同行评审。
+
+## V0.6.0 · 第一册资料核查（2026-10-17）
+
+本轮新增第一册 03–08 六篇原创正文，参考资料前汉字数约为 2209、2151、2279、2276、2097、2369。03 解释选择自重训练的理由与限制，04 组织家庭、公园和时间条件；没有复制动作教学。05 十项均含成因、问题与改法；06 不编造外形见效时间；07 提供空白 Markdown 日志与自愿测量、拍照隐私边界；08 衔接既有三册，不另写第 0 周按天处方。
+
+### 既有训练依据重核
+
+- R1：ACSM 2026 [官方说明](https://acsm.org/science-spotlight-acsm-releases-new-position-stand-on-resistance-training/)与[PMC 原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/)可读取。本次核对抗阻训练定义、每周至少两次与主要肌群、渐进及个体化讨论、研究限制。不把器材类型总体结果解读为所有自重动作都与所有器械等效；原文指出自重支持训练只在部分综述出现，不能由此认证本书具体方案。
+- R2：WHO [身体活动说明](https://www.who.int/news-room/fact-sheets/detail/physical-activity)与[2020 指南出版页](https://www.who.int/publications/i/item/9789240015128)。核对少量活动优于不动、力量活动和多方面健康收益；两次起步不是完整有氧与久坐建议的替代。指南 PDF 下载端本轮未成功读取，不称重读整部指南。
+- R4：Kikuchi 与 Nakazato 2017 [PubMed 书目与摘要](https://pubmed.ncbi.nlm.nih.gov/29541130/)可读取，核对十八名年轻男性、特定负荷与八周条件。不把其结果作为所有新手八周外形承诺。用于 03、04。
+- R12：Grgic 等 [PubMed 原始摘要](https://pubmed.ncbi.nlm.nih.gov/33497853/)可读取，核对十五项年轻成人研究、力竭并非必要条件及分组限制。本书保留两三次余力是实践估计，不是其精确最优处方。用于 05。
+- R16：中国营养学会 2022 食物多样、合理搭配作为 05、08 的基础饮食方向；个体增减量与补剂信息链接已完成的第二册，未新增营养剂量或特殊人群处方。
+
+### R18 · 力量适应中的学习与肌肉贡献
+
+- Folland JP, Williams AG. *The adaptations to strength training: morphological and neurological contributions to increased strength.* Sports Med. 2007;37(2):145–168。[PubMed](https://pubmed.ncbi.nlm.nih.gov/17241104/)；[DOI](https://doi.org/10.2165/00007256-200737020-00004)。
+- 本轮直接入口部分请求只返回空白，已核对 PubMed 检索可见原始书目与摘要，包含学习、协调及形态变化。不是本轮全文审读；用于 06、07 解释力量表现不等同肌肉量，不能据此划定人人适用的先神经、后肌肉时间段。
+
+### R19 · 早期尺寸变化与水肿
+
+- Damas F, Phillips SM, Lixandrão ME, et al. *Early resistance training-induced increases in muscle cross-sectional area are concomitant with edema-induced muscle swelling.* Eur J Appl Physiol. 2016;116(1):49–56（2015 年在线发表）。[PubMed](https://pubmed.ncbi.nlm.nih.gov/26280652/)；[期刊原始摘要](https://link.springer.com/article/10.1007/s00421-015-3243-4)。
+- 期刊页面可读书目和摘要，核对十名未训练年轻男性、十周训练及早期尺寸变化可能含水肿；全文为订阅内容，未称阅读全文。用于 06，不把短期充血或尺寸变化全部当作真实新增肌肉，也不由单项研究推断所有人的生理阶段。
+
+### R20 · 成人睡眠时长
+
+- Watson NF, Badr MS, Belenky G, et al. *Recommended amount of sleep for a healthy adult: a joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society.* J Clin Sleep Med. 2015;11(6):591–592。[AASM 原文 PDF](https://www.aasm.org/resources/pdf/adultsleepdurationconsensus.pdf)；[DOI](https://doi.org/10.5664/jcsm.4758)。
+- 已读取两页 PDF，核对十八至六十岁一般成人规律至少七小时睡眠的健康建议及个体差异；用于 05，不说七小时保证训练恢复，也不将其设为所有年龄与疾病的统一处方。
+
+### R21 · 腰围测量位置与一致性
+
+- WHO. *Waist circumference and waist–hip ratio: report of a WHO expert consultation.* Geneva, 2011；会议于 2008 年举行。[官方出版页](https://www.who.int/publications/i/item/9789241501491)。
+- 核对出版日期、题名及官方 PDF 的检索可见测量方法：最后可触及肋骨下缘与髂骨上缘之间的中点。PDF 直接下载端本轮返回错误，未称已审读完整报告；[WHO STEPS 手册](https://cdn.who.int/media/docs/default-source/ncds/ncd-surveillance/steps/steps-manual.pdf)的官方检索可见方法交叉支持同一测量位置。
+- 用于 07 的标准化自我观察；不将不同位置读数混用，不提供诊断阈值。日志与两周、四周复盘是本书实践模板，不是验证量表；拍照完全自愿，优先本地保存，不上传公开仓库。
+
+### 内容审校结论
+
+六章逐项检查了生活引入、核心结论、必要解释、生活案例、行动建议、误区和适用边界。03 与 04 按选择理由和现实条件分工，无大段重复；08 的十项清单只作开始前检查，保留第四册的详细执行职责。所有效果描述不承诺固定增肌、减脂或腹肌期限，未编造作者经历或训练成绩，未推荐危险家具替代与新补剂。新增模板为空表，不包含私人健康或身体照片。

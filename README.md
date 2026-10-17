@@ -4,7 +4,7 @@
 
 免费开源的中文街头健身知识库。
 
-永久免费阅读，持续更新。当前版本 **v0.5.0 · 第二册完结**，已完成二十篇正式文章与四册三十二章规划。后续十二章尚未发布。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
+永久免费阅读，持续更新。当前版本 **v0.6.0 · 第一册完结**，已完成二十六篇正式文章与四册三十二章规划。后续六章尚未发布。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
 
 ## 项目理念
 
@@ -38,12 +38,12 @@
 
 - [01 到底什么是薄肌？](src/content/docs/volume-01/01-what-is-lean.md) · 已发布
 - [02 我应该从哪里开始？](src/content/docs/volume-01/02-where-to-start.md) · 已发布
-- 03 自重健身为什么适合普通人？ · 计划中
-- 04 不去健身房，也能练出好身材吗？ · 计划中
-- 05 新手最容易犯的十个错误 · 计划中
-- 06 多久才能看到身体变化？ · 计划中
-- 07 如何判断自己有没有进步？ · 计划中
-- 08 开始健身前的准备清单 · 计划中
+- [03 自重健身为什么适合普通人？](src/content/docs/volume-01/03-why-calisthenics.md) · 已发布
+- [04 不去健身房，也能练出好身材吗？](src/content/docs/volume-01/04-training-without-gym.md) · 已发布
+- [05 新手最容易犯的十个错误](src/content/docs/volume-01/05-beginner-mistakes.md) · 已发布
+- [06 多久才能看到身体变化？](src/content/docs/volume-01/06-when-results-appear.md) · 已发布
+- [07 如何判断自己有没有进步？](src/content/docs/volume-01/07-tracking-progress.md) · 已发布
+- [08 开始健身前的准备清单](src/content/docs/volume-01/08-starting-checklist.md) · 已发布
 
 ### 第二册：吃出适合自己的好身材
 
@@ -80,7 +80,7 @@
 
 ## 科学资料说明
 
-正文末尾给出可追溯参考资料，集中登记见 [sources/references.md](sources/references.md)。本版在既有训练资料基础上，核对 WHO、中国居民膳食指南、EFSA、ISSN、NIH ODS 及蛋白质系统综述；第二册新增资料的实际读取层级与访问限制已逐项登记。区分科学证据、本书实践建议与编写观点，小样本结果不泛化成所有人的保证。
+正文末尾给出可追溯参考资料，集中登记见 [sources/references.md](sources/references.md)。本版在既有训练资料基础上，核对 WHO、中国居民膳食指南、EFSA、ISSN、NIH ODS 及蛋白质系统综述；第一、第二册新增资料的实际读取层级与访问限制已逐项登记；第一册补充训练适应、睡眠与标准化观察依据。区分科学证据、本书实践建议与编写观点，小样本结果不泛化成所有人的保证。
 
 用户提供的视频仅登记为选题线索；因未能读取核实，不以其内容作为正文证据。不转载文案、字幕或第三方图片。
 
@@ -119,4 +119,4 @@ npm run dev
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。V0.5.0 完成第二册八篇正文，全书二十篇发布，后续十二章计划中，不开发训练工具。
+见 [CHANGELOG.md](CHANGELOG.md)。V0.6.0 完成第一册八篇正文，全书二十六篇发布，后续六章计划中，不开发训练工具。

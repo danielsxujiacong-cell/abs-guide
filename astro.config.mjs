@@ -37,7 +37,7 @@ export default defineConfig({
     defaultLocale: 'root',
     locales: { root: { label: '简体中文', lang: 'zh-CN' } },
     customCss: ['./src/styles/site.css'],
-    favicon: '/favicon.svg',
+    favicon: '/favicon-flex-v060.svg',
     routeMiddleware: './src/route-data.ts',
     social: [{ icon: 'github', label: 'GitHub 开源书籍', href: 'https://github.com/danielsxujiacong-cell/abs-guide' }],
     components: {
