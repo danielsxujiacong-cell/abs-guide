@@ -70,32 +70,38 @@
       {
         "number": 3,
         "title": "蛋白质应该吃多少、怎么吃？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/03-protein.md"
       },
       {
         "number": 4,
         "title": "碳水和脂肪真的需要害怕吗？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/04-carbs-fats.md"
       },
       {
         "number": 5,
         "title": "想增加肌肉，饮食怎么调整？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/05-eating-for-muscle.md"
       },
       {
         "number": 6,
         "title": "想减少脂肪，怎么吃才可持续？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/06-eating-for-fat-loss.md"
       },
       {
         "number": 7,
         "title": "外卖、食堂和朋友聚餐怎么吃？",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/07-eating-out.md"
       },
       {
         "number": 8,
         "title": "蛋白粉、肌酸和常见饮食误区",
-        "status": "planned"
+        "status": "published",
+        "file": "volume-02/08-supplements-myths.md"
       }
     ]
   },

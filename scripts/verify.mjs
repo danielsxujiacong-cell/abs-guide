@@ -45,12 +45,12 @@ for (const file of baselineFiles) {
   const original = execFileSync('git', ['show', `c5fa910:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n');
   assert.equal(current, original, `Published article changed: ${file}`);
 }
-// V0.3 published articles are also immutable during the V0.4 expansion.
-const priorBooks = JSON.parse(execFileSync('git', ['show', '7507552:src/data/books.json'], { encoding: 'utf8' }));
+// Protect the complete V0.4 corpus during the V0.5 expansion.
+const priorBooks = JSON.parse(execFileSync('git', ['show', 'eb740d25a6d2334d43b4c7675d376b8651bc49aa:src/data/books.json'], { encoding: 'utf8' }));
 const priorArticles = priorBooks.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
 for (const c of priorArticles) {
   const file = `src/content/docs/${c.file}`;
-  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `7507552:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.3 article changed: ${file}`);
+  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `eb740d25a6d2334d43b4c7675d376b8651bc49aa:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.4 article changed: ${file}`);
 }
 let markdownLinks = 0;
 for (const file of [resolve('README.md'), resolve('sources/references.md'), ...markdown]) {

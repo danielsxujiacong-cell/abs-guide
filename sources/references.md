@@ -27,7 +27,7 @@
 - DOI：[10.1186/s12970-017-0177-8](https://doi.org/10.1186/s12970-017-0177-8)；[期刊原始全文](https://link.springer.com/article/10.1186/s12970-017-0177-8)。
 - 已核实：期刊全文、发表年份与立场摘要。明确引用 2017 版，不将其称作 2026 年新文件。
 - 支持范围：健康运动者蛋白质摄入参考范围，以及可以通过普通食物满足需要。
-- 边界：不是所有人的最低摄入量，不替代肾病等特殊情况的个体营养建议。本版未给出肌酸使用剂量，不借此蛋白质文件支撑肌酸处方。
+- 边界：不是所有人的最低摄入量，不替代肾病等特殊情况的个体营养建议。Step 1 未给出肌酸剂量；V0.5 另以 R17 登记研究剂量，不借此蛋白质文件支撑肌酸处方。
 - 使用位置：第二册 01。
 
 ## R4 · 自重俯卧撑原始干预研究
@@ -105,3 +105,41 @@
 ## 维护原则
 
 每篇正式文章末尾列出实际使用的来源；涉及新数值、特殊人群或新动作处方时重新查证原始资料。研究结论、实践安排和作者观点分开表达。发现不支持原主张的资料时修正文案，不用堆叠文献掩盖证据缺口。
+
+## V0.5.0 · 第二册两批资料核查（2026-10-17）
+
+本轮只扩写第二册 03–08；前十四篇正文不改写。第一批 03/04/05 与第二批 06/07/08 分别检查概念、数字、适用对象、实践示例及引用，再统一发布。六篇正文（参考资料前汉字数）分别约 2200、2054、2202、2087、2095、2182 字。以下为本轮实际读取层级，不把索引摘要称为全文审读。
+
+### R13 · 一般成人蛋白质参考
+
+- EFSA，2012，*EFSA sets population reference intakes for protein*。[官方说明](https://www.efsa.europa.eu/en/press/news/120209)。核对一般成人 0.83 克/公斤/日及人群参考含义；这是 EFSA 参考，不冒充中国标准，也不是运动优化目标。用于第二册 03。
+- 既有 R3（Jäger 等，2017，ISSN protein and exercise）本次读取 [PubMed 书目与摘要](https://pubmed.ncbi.nlm.nih.gov/28642676/)，核对 DOI 10.1186/s12970-017-0177-8 与 1.4–2.0 克/公斤/日运动参考。PMC 全文入口遇访问验证；不称已重新审读全文，不把运动者范围强加给所有新手。用于 03、08。
+
+### R14 · 蛋白质与抗阻训练系统综述
+
+- Morton RW, Murphy KT, McKellar SR, et al. *A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults.* Br J Sports Med. 2018;52(6):376–384（2017 年在线发表）。[PubMed](https://pubmed.ncbi.nlm.nih.gov/28698222/)；[DOI](https://doi.org/10.1136/bjsports-2017-097608)。
+- 核对原始记录的检索可见题名、作者、年份与摘要；直接入口本轮部分请求未返回正文。约 1.6 克/公斤/日是群体回归转折估计，不能当个人阈值、肌肉增长保证或补剂必需性的证明。用于 03、05。
+
+### R15 · 普通食物蛋白质计量
+
+- USDA National Agricultural Library，[Protein 份量表](https://www.nal.usda.gov/sites/default/files/page-files/Protein.pdf)。读取 PDF 表格：生鲜大鸡蛋每个 6.28 克；生鸡背去骨去皮肉 4 盎司 22.1 克；熟石斑鱼干热烹调 3 盎司 21.11 克；熟牛上腰脊瘦肉炙烤 3 盎司 25.75 克。
+- 第二册 03 将份量换算约 50/113/85/85 克，蛋白质取整为 6/22/21/26 克。鸡蛋约 50 克可食部分为大蛋换算参照，不含壳；生重仅用于成分计量，食用必须做熟。数据库样品不可视为中国家庭或食堂实测。
+- 牛奶、豆腐数值明确为假设标签的算术示例，不作为实际商品检测值；各章一日搭配不提供虚假热量和蛋白质总量。外食章完全不报精确热量。
+
+### R16 · 中国日常饮食与宏量营养素
+
+- 中国营养学会，2022，[准则一：食物多样，合理搭配](https://dg.cnsoc.org/article/04/D5ZFYyhzTgmHGvOsfS-1hg.html)；[准则四：适量吃鱼、禽、蛋、瘦肉](https://dg.cnsoc.org/article/04/3tyM8WoTTUmc_oFHMymk3Q.html)。核对官方页面，支持谷类为主、多样来源和少吃深加工肉的方向。用于 04、05、07。
+- WHO [Healthy diet](https://www.who.int/news-room/fact-sheets/detail/healthy-diet) 本次重读 2026-01-26 页面。用于 04、06、07 的来源质量、必需脂肪、饮食平衡和食品安全方向。未给所有读者硬套能量比例。
+- R9 全文用于 05、06，R10 与 R11 作为 06 的补充；不由小样本腹部试验推导任何情境都不可能局部变化，也不承诺局部减脂。观察两至四周、加减一份食物、场景点餐为本书实践建议，未经整套干预验证。
+
+### R17 · 肌酸和补充剂
+
+- Kreider RB, Kalman DS, Antonio J, et al. *International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine.* J Int Soc Sports Nutr. 2017;14:18。[全文入口](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/)；[DOI](https://doi.org/10.1186/s12970-017-0173-z)。本次全文入口遇访问验证，读取检索可见的原文摘要与安全讨论，并与下项官方资料交叉核对，不称已完整审读。
+- NIH Office of Dietary Supplements，[Exercise and Athletic Performance 专业资料](https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/)及[消费者资料](https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/)。核对一水肌酸、常见 3–5 克/日维持方案、非必须加载、重复高强度活动用途、水分增重及胃肠不适。用于 04 的基础营养背景与 08；健康成人证据不外推未成年人、孕期、疾病或用药者。
+- NIH ODS，[Weight Loss 专业资料](https://ods.od.nih.gov/factsheets/WeightLoss-HealthProfessional/)。用于 08 的减重补充剂证据有限、复方和安全风险背景；不推荐品牌、商品或购买链接。
+
+### 两批内容审校结论
+
+- 第一批 03–05：区分基本参考与运动参考；核对体重乘法、食物可食份量与生熟状态；三餐案例不伪造总量；增肌不保证每周速度，未把高能量食品或极端增重包装为最佳方案。
+- 第二批 06–08：没有极低热量菜单、低体脂崇拜或局部减脂承诺；十类外食场景逐一含正常吃、增肌、减脂与省钱选择；肌酸剂量明确为健康成人研究信息，含禁照搬人群及不适边界，没有品牌和购买链接。
+- 两批均检查原创行文、九项写作要素、章节分工与相对链接；六篇完整正文均超过约 2000 汉字。资料核对支持文中限定后的结论，不等于临床个体营养处方，也不宣称同行评审。
