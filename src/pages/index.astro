@@ -1,26 +1,26 @@
 ---
 import Publication from '../layouts/Publication.astro';
 import Bookshelf from '../components/Bookshelf.astro';
-import { firstChapter, chapters } from '../lib/books';
+import { firstChapter } from '../lib/books';
 import release from '../data/release.json';
 ---
-<Publication title="好身材，不必从健身房开始" description="一本普通人也能读懂的薄肌指南。从吃好每一顿饭，到完成人生第一个引体向上。全书四册 32 篇原创实战指南完结版。免费开源、零会员卡门槛、完全贴合国人家常三餐。">
+<Publication title="好身材，不必从健身房开始" description="一本写给普通中国男生的薄肌养成指南。不办卡、不喝水煮菜，把家常三餐和公园单杠变成你的蜕变场。全书四册 32 篇原创实战指南完结版。">
   <section class="hero" aria-labelledby="hero-title">
-    <p class="eyebrow">免费开源的中文街头健身指南 · 全书 32 篇完结</p>
+    <p class="eyebrow">人人可练的自重健身指南 · 全书 32 篇完结</p>
     <h1 id="hero-title">好身材，<br />不必从健身房开始。</h1>
-    <p class="hero-copy">一本普通人也能读懂的薄肌指南。<br />从吃好每一顿饭，到完成第一次俯卧撑。<br />用简单、接地气、可以坚持的方法，慢慢改变身体。</p>
-    <div class="hero-actions"><a class="button primary" href={firstChapter.href!}>开始阅读 <span aria-hidden="true">↗</span></a><a class="button secondary" href="/books/">浏览全部书籍 <span aria-hidden="true">→</span></a></div>
+    <p class="hero-copy">吃好一日三餐家常饭，把公园单杠和家里地面当成训练场。<br />没有办卡推销，没有水煮鸡胸肉，踏踏实实带你练出精悍体型。</p>
+    <div class="hero-actions"><a class="button primary" href={firstChapter.href!}>从第一章开始阅读 <span aria-hidden="true">→</span></a></div>
     <a data-continue class="continue-link" hidden>继续阅读</a>
-    <div class="hero-note"><span>不需要会员卡</span><span>不推销补剂与付费课</span><span>完全融入日常一日三餐</span></div>
+    <div class="hero-note"><span>零器械门槛</span><span>家常三餐不戒碳水</span><span>每周仅练 2~3 天</span></div>
   </section>
   <section class="shelf-section" aria-labelledby="shelf-title">
-    <div class="section-heading"><div><p class="eyebrow">四册书，一条清晰的起步路径</p><h2 id="shelf-title">从认识身体，到开始行动。</h2></div><a href="/books/">查看书架 <span aria-hidden="true">↗</span></a></div>
+    <div class="section-heading"><div><p class="eyebrow">四册全书规划</p><h2 id="shelf-title">从吃对三餐，到掌握自重进阶</h2></div><a href="/read/">查看全书目录 <span aria-hidden="true">→</span></a></div>
     <Bookshelf />
   </section>
   <section class="fast-track-section" aria-labelledby="fast-track-title">
     <div class="section-heading">
-      <div><p class="eyebrow">根据目标快速查阅</p><h2 id="fast-track-title">新手捷径地图</h2></div>
-      <a href="/read/">查看全书完整目录 <span aria-hidden="true">→</span></a>
+      <div><p class="eyebrow">不想按部就班？直接查重点</p><h2 id="fast-track-title">新手捷径地图</h2></div>
+      <a href="/read/">查看完整提纲 <span aria-hidden="true">→</span></a>
     </div>
     <div class="fast-track-grid">
       <div class="fast-track-card">
@@ -61,6 +61,6 @@ import release from '../data/release.json';
       </div>
     </div>
   </section>
-  <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">给第一次开始的你</p><h2 id="note-title">不用一下子改变全部。<br />先读一章，做好一件事。</h2></div><div><p>先读第一册的前两章，弄清自己的起点；再安排一日三餐、尝试第一次训练，最后完成第 0 周准备。暂时没有单杠，也可以先从地面基础动作做起，再去附近的公园找单双杠。</p><p>全书四册共 {chapters.length} 篇原创实战指南已全部完结发布。永久免费、开源、贴合国人日常生活与饮食习惯。没有花哨的套路，只有真正能融入你日常生活的吃练心法。挑一章你最关心的，今天就试着迈出第一步。</p><a href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 阅读与参与共建 ↗</a></div></section>
+  <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">致每一位刚起步的你</p><h2 id="note-title">不用一下子改变全部。<br />今天做好一件事，就已经赢了。</h2></div><div><p>没有器械，就从推墙和标准俯卧撑做起；暂时拉不起引体，就先去公园单杠做死悬吊与澳式划船。三餐吃饱家常饭，别把自己逼成苦行僧；只要每周坚持练够两三天，身体自然会给你最诚实的反馈。</p><div class="reading-note-actions"><a class="button primary" href={firstChapter.href!}>从第一章开启蜕变 →</a><a class="button secondary" href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 参与共建 ↗</a></div></div></section>
   <div class="update-line" data-release={release.version}><span class="status-dot" aria-hidden="true"></span><span>{release.date} · v{release.version} · {release.note}</span><a href="https://github.com/danielsxujiacong-cell/abs-guide/blob/main/CHANGELOG.md">更新日志 ↗</a></div>
 </Publication>

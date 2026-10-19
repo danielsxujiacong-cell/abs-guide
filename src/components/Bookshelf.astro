@@ -12,7 +12,7 @@ const tagsMap: Record<number, string[]> = {
 <div class="bookshelf">
   {books.map((book) => <article class="shelf-book">
     <BookCover number={book.number} title={book.title} href={book.href} />
-    <div class="shelf-meta"><span>全册 {book.chapters.length} 章完结</span><span>免费阅读</span></div>
+    <div class="shelf-meta"><span>全册 {book.chapters.length} 篇</span><span>已完结</span></div>
     <p>{book.description}</p>
     <div class="shelf-tags">
       {tagsMap[book.number]?.map((tag) => <span class="shelf-tag">{tag}</span>)}
