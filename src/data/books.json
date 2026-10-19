@@ -188,12 +188,14 @@
       {
         "number": 3,
         "title": "第 3–4 周：掌握基础自重动作",
-        "status": "planned"
+        "file": "volume-04/03-weeks-three-four.md",
+        "status": "published"
       },
       {
         "number": 4,
         "title": "第 5–6 周：逐渐增加训练难度",
-        "status": "planned"
+        "file": "volume-04/04-weeks-five-six.md",
+        "status": "published"
       },
       {
         "number": 5,

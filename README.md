@@ -71,8 +71,8 @@
 
 - [01 第 0 周：开始你的 12 周训练计划](src/content/docs/volume-04/01-week-zero.md) · 已发布
 - [02 第 1–2 周：建立训练习惯](src/content/docs/volume-04/02-weeks-one-two.md) · 已发布
-- 03 第 3–4 周：掌握基础自重动作 · 计划中
-- 04 第 5–6 周：逐渐增加训练难度 · 计划中
+- [03 第 3–4 周：掌握基础自重动作](src/content/docs/volume-04/03-weeks-three-four.md) · 已发布
+- [04 第 5–6 周：逐渐增加训练难度](src/content/docs/volume-04/04-weeks-five-six.md) · 已发布
 - 05 第 7–8 周：检查自己的进步 · 计划中
 - 06 第 9–10 周：调整训练和饮食 · 计划中
 - 07 第 11–12 周：完成第一个训练周期 · 计划中
@@ -119,4 +119,4 @@ npm run dev
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。V0.6.0 完成第一册八篇正文，全书二十六篇发布，后续六章计划中，不开发训练工具。
+见 [CHANGELOG.md](CHANGELOG.md)。已发布二十八篇正文，后续四章计划中，不开发训练工具。
