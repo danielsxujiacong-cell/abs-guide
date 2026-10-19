@@ -6,17 +6,17 @@ import release from '../data/release.json';
 ---
 <Publication title="好身材，不必从健身房开始">
   <section class="hero" aria-labelledby="hero-title">
-    <p class="eyebrow">免费开源的中文街头健身指南</p>
+    <p class="eyebrow">免费开源的中文街头健身指南 · 全书 32 篇完结</p>
     <h1 id="hero-title">好身材，<br />不必从健身房开始。</h1>
-    <p class="hero-copy">一本普通人也能读懂的薄肌指南。<br />从吃好每一顿饭，到完成第一次俯卧撑。<br />用简单、科学、可以坚持的方法，慢慢改变身体。</p>
+    <p class="hero-copy">一本普通人也能读懂的薄肌指南。<br />从吃好每一顿饭，到完成第一次俯卧撑。<br />用简单、接地气、可以坚持的方法，慢慢改变身体。</p>
     <div class="hero-actions"><a class="button primary" href={firstChapter.href!}>开始阅读 <span aria-hidden="true">↗</span></a><a class="button secondary" href="/books/">浏览全部书籍 <span aria-hidden="true">→</span></a></div>
     <a data-continue class="continue-link" hidden>继续阅读</a>
-    <div class="hero-note"><span>不需要会员</span><span>从基础动作开始</span><span>按自己的节奏进步</span></div>
+    <div class="hero-note"><span>不需要会员卡</span><span>不推销补剂与付费课</span><span>完全融入日常一日三餐</span></div>
   </section>
   <section class="shelf-section" aria-labelledby="shelf-title">
     <div class="section-heading"><div><p class="eyebrow">四册书，一条清晰的起步路径</p><h2 id="shelf-title">从认识身体，到开始行动。</h2></div><a href="/books/">查看书架 <span aria-hidden="true">↗</span></a></div>
     <Bookshelf />
   </section>
-  <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">给第一次开始的你</p><h2 id="note-title">不用一下子改变全部。<br />先读一章，做好一件事。</h2></div><div><p>先读第一册的前两章，弄清自己的起点；再安排一日三餐、尝试第一次训练，最后完成第 0 周准备。暂时没有单杠，也可以先开始基础动作，再去寻找安全可靠的公园设施。</p><p>这本书永久免费、开源、长期更新。{chapters.length} 篇正文已发布，其他章节正在规划中。科学依据与实践建议分开写，不许诺快速变身。</p><a href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 阅读与参与共建 ↗</a></div></section>
+  <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">给第一次开始的你</p><h2 id="note-title">不用一下子改变全部。<br />先读一章，做好一件事。</h2></div><div><p>先读第一册的前两章，弄清自己的起点；再安排一日三餐、尝试第一次训练，最后完成第 0 周准备。暂时没有单杠，也可以先从地面基础动作做起，再去附近的公园找单双杠。</p><p>全书四册共 {chapters.length} 篇原创实战指南已全部完结发布。永久免费、开源、贴合国人日常生活与饮食习惯。没有花哨的套路，只有真正能融入你日常生活的吃练心法。挑一章你最关心的，今天就试着迈出第一步。</p><a href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 阅读与参与共建 ↗</a></div></section>
   <div class="update-line" data-release={release.version}><span class="status-dot" aria-hidden="true"></span><span>{release.date} · v{release.version} · {release.note}</span><a href="https://github.com/danielsxujiacong-cell/abs-guide/blob/main/CHANGELOG.md">更新日志 ↗</a></div>
 </Publication>

@@ -1,11 +1,21 @@
 ---
 import { books } from '../lib/books';
 import BookCover from './BookCover.astro';
+
+const tagsMap: Record<number, string[]> = {
+  1: ['体脂率认知', '避坑指南', '极简自测'],
+  2: ['日常肉蛋奶', '外卖食堂点餐', '不戒碳水'],
+  3: ['俯卧撑/引体', '发力细节口诀', '极简排班'],
+  4: ['12周实践课表', '新手第0周', '终身维持'],
+};
 ---
 <div class="bookshelf">
   {books.map((book) => <article class="shelf-book">
     <BookCover number={book.number} title={book.title} href={book.href} />
-    <div class="shelf-meta"><span>{book.chapters.filter((c) => c.published).length} / {book.chapters.length} 章已发布</span><span>持续更新</span></div>
+    <div class="shelf-meta"><span>全册 {book.chapters.length} 章完结</span><span>免费阅读</span></div>
     <p>{book.description}</p>
+    <div class="shelf-tags">
+      {tagsMap[book.number]?.map((tag) => <span class="shelf-tag">{tag}</span>)}
+    </div>
   </article>)}
 </div>

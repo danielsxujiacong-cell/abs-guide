@@ -71,6 +71,8 @@
   .shelf-meta { display: flex; justify-content: space-between; gap: 6px; color: var(--muted); font-size: 10px; margin-top: 16px; }
   .shelf-meta > span:last-child { opacity: .8; }
   .shelf-book > p { color: var(--muted); font-size: 12px; line-height: 1.9; margin: 9px 0 0; }
+  .shelf-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .shelf-tag { font-size: 10px; padding: 2px 7px; background: var(--surface); color: var(--muted); border-radius: 4px; line-height: 1.6; border: 1px solid var(--line); }
   .reading-note { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; border-top: 1px solid var(--line); padding-block: 45px; }
   .reading-note h2 { font-size: 25px; line-height: 1.6; letter-spacing: -.03em; font-weight: 550; margin: 0; }
   .reading-note p:not(.eyebrow) { margin: 0 0 15px; color: var(--muted); font-size: 13px; line-height: 2; }

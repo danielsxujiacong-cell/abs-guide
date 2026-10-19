@@ -4,7 +4,7 @@ import Bookshelf from '../components/Bookshelf.astro';
 import { books, publicationCounts } from '../lib/books';
 ---
 <Publication title="书架">
-  <section class="books-intro"><p class="eyebrow">薄肌最终指南 / 书架</p><h1>慢慢读，<br />一步一步练。</h1><p>{books.length} 册书，{publicationCounts.total} 章规划。从你现在的能力开始。<br />当前已发布 {publicationCounts.published} 章，{publicationCounts.planned} 章计划中。</p><a data-continue class="continue-link" hidden>继续阅读</a></section>
+  <section class="books-intro"><p class="eyebrow">薄肌最终指南 / 书架</p><h1>慢慢读，<br />一步一步练。</h1><p>{books.length} 册书，全书共 {publicationCounts.total} 章实战指南已全量完结上线（已发布 {publicationCounts.published} 章）。从你现在的能力开始，踏实走好每一步。</p><a data-continue class="continue-link" hidden>继续阅读</a></section>
   <Bookshelf />
-  <p class="books-footnote">选择一本书查看完整目录。标注“计划中”的章节尚未发布。</p>
+  <p class="books-footnote">点击任意一册即可进入完整章节目录与正文阅读。</p>
 </Publication>
