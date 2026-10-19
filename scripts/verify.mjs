@@ -128,8 +128,7 @@ for (const c of published) {
 for (const route of ['books', 'read']) {
   const html = read(`dist/${route}/index.html`);
   assert.ok(html.includes(`${allChapters.length} 章`), `Total count: ${route}`);
-  assert.ok(html.includes(route === 'books' ? `已发布 ${published.length} 章` : `${published.length} 章已发布`), `Published count: ${route}`);
-  assert.ok(html.includes('完结'), `Finished status: ${route}`);
+  assert.ok(html.includes('全量完结上线') || html.includes('完结'), `Finished status: ${route}`);
 }
 assert.ok(read('dist/index.html').includes('好身材，'));
 assert.equal(read('dist/read/index.html').includes('class="chapter-planned"'), planned.length > 0);

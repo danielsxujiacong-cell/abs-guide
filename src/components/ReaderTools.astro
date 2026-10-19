@@ -14,7 +14,11 @@ const valid = chapters.map((c) => ({ href: c.href, title: c.title }));
     try {
       const saved = JSON.parse(localStorage.getItem('abs-guide:last-read') || 'null');
       const match = saved && config.valid.find((c) => c.href === saved.href);
-      if (match && match.href !== config.current?.href) document.querySelectorAll<HTMLAnchorElement>('[data-continue]').forEach((link) => { link.href = match.href; link.textContent = `继续阅读：${match.title} →`; link.hidden = false; });
+      if (match && match.href !== config.current?.href) document.querySelectorAll<HTMLAnchorElement>('[data-continue]').forEach((link) => {
+        link.href = match.href;
+        link.innerHTML = `<span class="continue-badge-icon" aria-hidden="true">🔖</span><span class="continue-badge-text">继续上次阅读：<strong>${match.title}</strong></span><span class="continue-badge-arrow" aria-hidden="true">→</span>`;
+        link.hidden = false;
+      });
       if (config.current) localStorage.setItem('abs-guide:last-read', JSON.stringify(config.current));
     } catch { /* Storage may be disabled; reading still works. */ }
     const fill = document.getElementById('reading-progress-fill');

@@ -47,10 +47,30 @@ const ogImageUrl = `${siteUrl}/images/og-share.png`;
     <a class="skip-link" href="#main">跳到正文</a>
     <header class="publication-header">
       <SiteTitle />
-      <nav aria-label="主要导航"><a href="/books/">书架</a><a href="/read/">目录与搜索</a><label class="theme-control"><span class="sr-only">外观</span><select id="publication-theme" aria-label="外观"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label></nav>
+      <nav aria-label="主要导航">
+        <a href="/books/">书架</a>
+        <a href="/read/">目录</a>
+        <button id="global-search-trigger" class="global-search-trigger" aria-label="搜索全书 (Ctrl+K)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>搜索</span>
+          <kbd id="global-search-kbd" class="global-search-kbd">Ctrl K</kbd>
+        </button>
+        <label class="theme-control"><span class="sr-only">外观</span><select id="publication-theme" aria-label="外观"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label>
+      </nav>
     </header>
     <main id="main" class="publication-main"><slot /></main>
     <footer class="publication-footer"><span>ABS GUIDE · 薄肌最终指南</span><span>内容 CC BY-SA 4.0 · 代码 MIT</span><a href="https://github.com/danielsxujiacong-cell/abs-guide">GitHub ↗</a></footer>
+    <dialog id="global-search-dialog" class="global-search-dialog" aria-label="搜索全书">
+      <div class="global-search-dialog-frame">
+        <div class="global-search-dialog-header">
+          <span class="global-search-dialog-title">搜索全书 32 篇实战内容</span>
+          <button id="global-search-close" class="global-search-close" aria-label="关闭搜索">Esc 取消</button>
+        </div>
+        <div id="global-search-container">
+          <div class="global-search-loading">正在准备搜索索引…</div>
+        </div>
+      </div>
+    </dialog>
     <ReaderTools />
     <script>
       const select = document.querySelector<HTMLSelectElement>('#publication-theme');
@@ -59,6 +79,102 @@ const ogImageUrl = `${siteUrl}/images/og-share.png`;
       const apply = () => { document.documentElement.dataset.theme = mode === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : mode; };
       if (select) { select.value = mode; select.addEventListener('change', () => { mode = select.value; try { localStorage.setItem('starlight-theme', mode === 'auto' ? '' : mode); } catch {} apply(); }); }
       matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply);
+
+      function setupGlobalSearch() {
+        const trigger = document.getElementById('global-search-trigger');
+        const dialog = document.getElementById('global-search-dialog') as HTMLDialogElement | null;
+        const closeBtn = document.getElementById('global-search-close');
+        const kbd = document.getElementById('global-search-kbd');
+        const container = document.getElementById('global-search-container');
+        if (!dialog) return;
+
+        if (kbd && /(Mac|iPhone|iPod|iPad)/i.test((navigator as any).userAgentData?.platform || (navigator as any).platform || navigator.userAgent)) {
+          kbd.textContent = '⌘K';
+        }
+
+        let pagefindLoaded = false;
+        async function loadPagefind() {
+          if (pagefindLoaded) return;
+          pagefindLoaded = true;
+          try {
+            if (!document.getElementById('pagefind-ui-css')) {
+              const link = document.createElement('link');
+              link.id = 'pagefind-ui-css';
+              link.rel = 'stylesheet';
+              link.href = '/pagefind/pagefind-ui.css';
+              document.head.appendChild(link);
+            }
+            if (!(window as any).PagefindUI) {
+              await new Promise<void>((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = '/pagefind/pagefind-ui.js';
+                script.onload = () => resolve();
+                script.onerror = () => reject(new Error('Failed to load pagefind script'));
+                document.head.appendChild(script);
+              });
+            }
+            if (container) {
+              container.innerHTML = '';
+              new (window as any).PagefindUI({
+                element: '#global-search-container',
+                baseUrl: '/',
+                bundlePath: '/pagefind/',
+                showImages: false,
+                showSubResults: true,
+                translations: {
+                  placeholder: '输入关键词搜索（如：俯卧撑、引体、蛋白质、减脂…）',
+                  clear_search: '清除',
+                  load_more: '加载更多结果',
+                  search_label: '搜索全书',
+                  filters_label: '筛选',
+                  zero_results: '没有找到“[SEARCH_TERM]”的结果',
+                  many_results: '“[SEARCH_TERM]”的 [COUNT] 条结果',
+                  one_result: '“[SEARCH_TERM]”的 [COUNT] 条结果',
+                  alt_search: '没有找到“[SEARCH_TERM]”，以下是“[DIFFERENT_TERM]”的结果',
+                  search_suggestion: '没有找到“[SEARCH_TERM]”，试试以下搜索：',
+                  searching: '正在搜索“[SEARCH_TERM]”…'
+                }
+              });
+            }
+          } catch {
+            if (container) {
+              container.innerHTML = '<div style="padding:24px;text-align:center;color:var(--muted);font-size:13px;">搜索索引在生产构建后可用。<br /><a href="/read/" style="display:inline-block;margin-top:10px;color:var(--sl-color-text-accent);">前往目录查看全书章节 ↗</a></div>';
+            }
+          }
+        }
+
+        const openSearch = async () => {
+          dialog.showModal();
+          document.body.style.overflow = 'hidden';
+          await loadPagefind();
+          setTimeout(() => {
+            container?.querySelector<HTMLInputElement>('input')?.focus();
+          }, 60);
+        };
+
+        const closeSearch = () => {
+          dialog.close();
+          document.body.style.overflow = '';
+        };
+
+        trigger?.addEventListener('click', openSearch);
+        closeBtn?.addEventListener('click', closeSearch);
+
+        dialog.addEventListener('click', (e) => {
+          if (e.target === dialog) closeSearch();
+          const target = e.target as HTMLElement | null;
+          if (target && target.closest('a')) closeSearch();
+        });
+
+        window.addEventListener('keydown', (e) => {
+          if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+            e.preventDefault();
+            if (dialog.open) closeSearch();
+            else openSearch();
+          }
+        });
+      }
+      setupGlobalSearch();
     </script>
   </body>
 </html>
