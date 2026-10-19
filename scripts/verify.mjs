@@ -41,9 +41,9 @@ for (const file of sourceFiles) {
 const v05Ref = 'ed5ed7f4b55ca17c085a2c6d8675dd7bbed39a38';
 const v05Books = JSON.parse(execFileSync('git', ['show', `${v05Ref}:src/data/books.json`], { encoding: 'utf8' }));
 const v05Articles = v05Books.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
-// Volume 01 and Volume 02 have undergone plain-language polishing to remove translationese and disclaimers.
+// Volume 01, Volume 02, and Volume 03 have undergone plain-language polishing to remove translationese and disclaimers.
 // Protect other prior articles from unintended mutation:
-for (const c of v05Articles.filter((c) => !c.file.startsWith('volume-01/') && !c.file.startsWith('volume-02/'))) {
+for (const c of v05Articles.filter((c) => !c.file.startsWith('volume-01/') && !c.file.startsWith('volume-02/') && !c.file.startsWith('volume-03/'))) {
   const file = `src/content/docs/${c.file}`;
   assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `${v05Ref}:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `Prior article changed: ${file}`);
 }
