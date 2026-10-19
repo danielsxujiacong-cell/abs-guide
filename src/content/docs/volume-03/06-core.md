@@ -57,9 +57,3 @@ sidebar:
 - **每周 2–3 次，每次选 2 个动作**：例如做完引体和俯卧撑后，加【死虫式 2 组 × 8 次/侧】 + 【平板支撑 2 组 × 20 秒】；或者去公园时做【悬垂屈膝举腿 2 组 × 6–8 次】。
 
 不需要天天练，腹肌也需要休息和合成。把动作做标准，配合干净的家常饮食，腹部平坦立体的肌肉线条自然会浮出水面！
-
-## 参考资料与证据说明
-
-1. Vispute SS 等，2011，*The effect of abdominal exercise on abdominal fat*。严谨证实针对腹部的孤立训练无法产生局部减脂效果，体脂率下降取决于全身性能量平衡。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/21804427/)。
-2. McGill SM，2010，*Core Training: Evidence Translating to Better Performance and Injury Prevention*。脊柱生物力学权威著作，系统阐明死虫式、平板支撑等抗伸展核心训练对保护腰椎与提升运动表现的决定性优势。[文献原文](https://journals.lww.com/nsca-scj/Fulltext/2010/06000/Core_Training__Evidence_Translating_to_Better.4.aspx)。
-3. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。躯干核心渐进抗阻训练规范。

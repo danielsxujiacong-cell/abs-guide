@@ -62,10 +62,3 @@ sidebar:
 真实写下一笔，不虚构、不敷衍。一个月后滑上去翻看，你会由衷地佩服那个在平凡日子里默默坚持的自己。
 
 做好准备，我们去看看正式开练前的最后检查：[08 开始健身前的准备清单](08-starting-checklist.md)！
-
----
-
-## 参考资料与证据说明
-
-1. World Health Organization (WHO). 2011. *Waist circumference and waist-hip ratio: report of a WHO expert consultation*. 确立了以肋下缘与髂嵴中点水平周径（肚脐上方）为标准的人体腹部脂肪与代谢健康评估规范。
-2. ACSM 2026 抗阻训练立场文件。强调力量评估应基于动作全程的技术规范度与可重复性，动作速度与轨迹质量优于盲目追求绝对次数累加。

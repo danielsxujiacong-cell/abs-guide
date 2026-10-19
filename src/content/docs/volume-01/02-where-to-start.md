@@ -67,10 +67,3 @@ sidebar:
 4. **安心睡一觉**：睡前喝杯温水，给身体一整晚的修复时间。
 
 完成了这四步，恭喜你，你已经正式出发了！直接进入[03 自重健身为什么适合普通人？](03-why-calisthenics.md)，我们接着往下聊！
-
----
-
-## 参考资料与证据说明
-
-1. World Health Organization (WHO). 2020. *WHO guidelines on physical activity and sedentary behaviour*. 权威公共卫生指南指出，一般成年人每周至少进行两天涉及主要肌群的抗阻活动即可获得显著健康益处，少量开始、逐步积累是久坐人群最安全有效的模式。
-2. Currier BS 等，2026，ACSM 抗阻训练立场文件。[原始文献](https://pubmed.ncbi.nlm.nih.gov/41843416/)，DOI：10.1249/MSS.0000000000003897。强调抗阻训练应匹配个体起点能力，循序渐进而非盲目追求极限力竭。

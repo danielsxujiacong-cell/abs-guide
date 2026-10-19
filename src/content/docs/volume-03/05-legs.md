@@ -67,9 +67,3 @@ sidebar:
 - **加强臀桥**：很多人的膝盖不适是因为久坐导致大腿后侧和臀部肌肉无力，全靠大腿前侧硬顶。多练臀桥，后侧链强大了，膝盖压力自然迎刃而解。
 
 走下楼梯，迈开大步，一双结实平稳的双腿，会让你在生活中随时随地充满底气！
-
-## 参考资料与证据说明
-
-1. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。下肢双侧与单侧抗阻训练对功能性力量与肌肥大的系统论述。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-2. WHO，2020，*Guidelines on physical activity and sedentary behaviour*。强调下肢大肌群训练对骨骼密度、心血管健康与久坐干预的基础价值。[官方指南](https://www.who.int/publications/i/item/9789240015128)。
-3. Schoenfeld BJ，2010，*Squatting kinematics and kinetics and their application to exercise performance*。详尽论证深蹲中足踝活动度、膝关节与髋关节协同发力机制及“膝超脚尖”的生物力学合理性。[文献全文](https://pubmed.ncbi.nlm.nih.gov/20182386/)。

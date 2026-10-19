@@ -70,10 +70,3 @@ sidebar:
 - 外卖聚餐少拌菜底重油，少喝含糖饮料。
 
 吃好每一顿饭，你的身体自然会拥有蓬勃的生命力与扎实紧致的线条。
-
-## 参考资料与证据说明
-
-1. Jäger R 等，2017，*International Society of Sports Nutrition Position Stand: protein and exercise*。阐明整食物蛋白质来源充足时补剂非必需的运动营养共识。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/28642676/)。
-2. Kreider RB 等，2017，*International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine*。全面论述一水肌酸（3–5 g/d）在抗阻训练中的增力机制与安全性证据。[PMC 全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/)。
-3. NIH ODS，*Dietary Supplements for Exercise and Athletic Performance*。美国国立卫生研究院关于运动补剂的循证评价，指出大多数宣称神奇燃脂的产品缺乏临床证据。[NIH 官方指南](https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/)。
-4. 中国营养学会，2022，《中国居民膳食指南》。核心提倡从天然膳食中获取全部必需营养素。

@@ -72,9 +72,3 @@ sidebar:
 - 绝对不要在单杠上疯狂狂练两小时去“赎罪”。
 
 一顿饭成就不了你的好身材，一顿饭也绝对毁不掉你几个星期的坚持。带着轻松平和的心态，把减脂融入你的正常生活，腹部清晰的线条自然会水到渠成。
-
-## 参考资料与证据说明
-
-1. Aragon AA 等，2017，*International society of sports nutrition position stand: diets and body composition*。用于适度热量赤字、充足蛋白质摄入与维持瘦体重关系的指南。[原始文献](https://pmc.ncbi.nlm.nih.gov/articles/PMC5470183/)。
-2. Vispute SS 等，2011，*The effect of abdominal exercise on abdominal fat*。证实针对腹部的孤立训练不能实现局部减脂，全身性热量平衡才是减脂的核心机制。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/21804427/)。
-3. WHO，2026，*Healthy diet*。用于健康膳食结构、蔬菜水果摄入与长期体重管理的指导原则。

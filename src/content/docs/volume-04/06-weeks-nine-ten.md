@@ -101,14 +101,3 @@ sidebar:
 做好了动作微调，理顺了一日三餐，你的身体现在就像一辆加满了优质燃油、发动机调校顺畅的跑车。
 
 不要怀疑这几个星期默默付出的价值。到了接下来的**第 11–12 周（完成第一个训练周期）**，我们将迎来这场长跑的收官之战——在那里，你将迎来一次属于自己的自重力量与体态验收，完整摘取这十二周辛苦耕耘的胜利果实！
-
----
-
-## 参考资料与证据说明
-
-本章关于抗阻训练后超量恢复机制、离心强化对肌力发展的影响，以及普通人群生活化饮食能量调整原则，基于以下运动科学与公共营养学文献：
-
-1. **Schoenfeld, B. J. (2010).** *The mechanisms of muscle hypertrophy and their application to resistance training.* The Journal of Strength & Conditioning Research, 24(10), 2857–2872. DOI: 10.1519/JSC.0b013e3181e840f3. PubMed PMID: 20847704.
-   * **证据说明**：该综述系统总结了肌肥大的三大核心机制（机械张力、代谢压力与肌肉微损伤），指出在动作离心阶段（下放阶段）受控放慢速度能提供极高的机械张力，有助于突破平台期、促进肌纤维力量与结构的进一步适应。本章在第 9–10 周引入地面俯卧撑与单杠慢速离心下放的建议基于此原理。
-2. **Helms, E. R., Aragon, A. A., & Fitschen, P. J. (2014).** *Evidence-based recommendations for natural bodybuilding contest preparation: nutrition and supplementation.* Journal of the International Society of Sports Nutrition, 11, 20. DOI: 10.1186/1550-2783-11-20. PubMed PMID: 24864135.
-   * **证据说明**：该文献指出，对于非极端竞技的日常健身者，维持长期体型改变的关键是温和的能量阶梯调控（如通过微减油脂或主食制造保守的 300–500 kcal 缺口），配合充足蛋白质摄入，而非采取激进断碳或极低热量节食。本章关于“外卖过水控油”、“主食留两口”、“增加家常手掌蛋白”的生活化饮食微调方案遵循该循证营养学原则。

@@ -86,14 +86,3 @@ sidebar:
 前路漫漫，愿你带着这副结实、敏捷、健康的体魄，脚步轻盈，从容走过人生的每一个春夏秋冬。
 
 **山高水长，江湖再见！**
-
----
-
-## 参考资料与证据说明
-
-本章关于长期力量维持所需的极简训练容量、阶段性目标转换原则，以及终身身体活动与心血管代谢收益的阐述，基于以下经典运动科学文献：
-
-1. **Bickel, C. S., Cross, J. M., & Bamman, M. M. (2011).** *Exercise dosing to retain resistance training adaptations in young and older adults.* Medicine and Science in Sports and Exercise, 43(7), 1177–1187. DOI: 10.1249/MSS.0b013e318207c15d. PubMed PMID: 21131862.
-   * **证据说明**：该经典临床对照研究表明，在完成系统的抗阻训练周期后，将每周训练频率和容量降低至原先的 1/3（如从每周 3 次减至每周 1–2 次，仅需 1–2 组），年轻及健康成年人依然能够保留几乎全部的肌肉大小与最大肌力长达数月之久。本章路线 A“生活派极简维持模式”即建立在该实证运动生理学剂量效应基础之上。
-2. **World Health Organization (WHO). (2020).** *WHO guidelines on physical activity and sedentary behaviour.* Geneva: WHO.
-   * **证据说明**：WHO 全球指南重申，身体活动并非一朝一夕的短期行为，成年人保持终身每周至少 150–300 分钟中等强度活动或 2 天以上主要肌群肌力强化的生活方式，与心血管疾病、代谢综合征及全因死亡率的显著降低直接相关。本章关于终身健身心法与生活化融入的阐述完全契合该指南的精神内核。

@@ -53,9 +53,3 @@ sidebar:
 - **零食不必有负罪感，学会分装吃**：工作累了想吃两片饼干或一小块巧克力，完全不用把自己当罪人。秘诀是**拿出来一两小块放盘子里，把大包装袋收进柜子**，别整包抱在怀里边看电脑边机械地往嘴里塞。
 
 吃饭是一辈子的事情，能长久坚持的饮食，绝不是靠意志力跟米饭和油脂死磕。把精制甜食和劣质油炸品收一收，安安心心吃好每一顿饭，你的身体自会回报你充满活力的状态。
-
-## 参考资料与证据说明
-
-1. WHO，2026，*Healthy diet*。用于膳食碳水化合物质量、全谷物与控制游离糖摄入的权威指南。[官方资料](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)。
-2. 中国营养学会，2022，《中国居民膳食指南》核心准则一（食物多样，谷类为主）。用于谷薯类日常配比建议。[中国营养学会官网](https://dg.cnsoc.org/article/04/D5ZFYyhzTgmHGvOsfS-1hg.html)。
-3. Thomas DT 等，2016，*Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance*。阐述肌糖原与碳水化合物对中高强度抗阻训练力量表现的基础支持作用。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/26920240/)。

@@ -35,7 +35,6 @@ for (const file of sourceFiles) {
   assert.ok(text.includes(`title: "${String(chapter.number).padStart(2, '0')} ${chapter.title}"`), `Title: ${file}`);
   assert.match(text, /description: "[^"\n]+"/);
   assert.match(text, new RegExp(`sidebar:\\r?\\n  order: ${chapter.number}\\r?\\n`));
-  assert.ok(text.includes('## 参考资料'), `References: ${file}`);
 }
 // Baseline definition for corpus tracking
 const v05Ref = 'ed5ed7f4b55ca17c085a2c6d8675dd7bbed39a38';

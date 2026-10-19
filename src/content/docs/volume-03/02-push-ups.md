@@ -66,9 +66,3 @@ sidebar:
    这是腹部核心偷懒、严重塌腰代偿的信号。立刻把手掌支撑位置抬高一截（比如换成推桌子或推墙），注意力放在“屁股夹紧、腹肌收拢”上，身体稳住了，胸肌才会真正受力。
 3. **只能做 2 个标准俯卧撑，该不该每天狂练测极限？**
    千万别！每天拼老命做 2 个变形的动作只会堆积关节疲劳。聪明的做法是：把主力训练放在能做 8–10 次的高位支撑上积累训练量，体力充沛时在热身后标准推 1–2 个找找感觉，量力而行，力量涨得最快。
-
-## 参考资料与证据说明
-
-1. Kikuchi N、Nakazato K，2017，*Low-load bench press and push-up induce similar muscle hypertrophy and strength gain*。证实与卧推相当相对负荷的俯卧撑训练，对胸大肌和肱三头肌的肌肥大与力量增长具备同等显著效果。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/29541130/)。
-2. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。上肢水平推力动作的渐进超负荷与动作控制原则。[原始文献](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-3. Ebben WP 等，2011，*Kinematic and kinetic analysis of pushing variations*。测定不同高度俯卧撑对体重的实际支撑负荷比例（推墙约 40%，跪姿约 53%，标准地面约 64%，垫高脚约 74%）。

@@ -81,9 +81,3 @@ sidebar:
 > *状态：昨晚睡得很香，力量充足，下周澳式引体准备脚再往前走一步增加难度！*
 
 看着备忘录里一行行积累起来的数据，你会发自内心地感到踏实——因为每一滴流过的汗水，都变成了身体里坚实不摧的力量！
-
-## 参考资料与证据说明
-
-1. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。抗阻训练渐进超负荷、负荷调节策略及动作进阶科学框架。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-2. Grgic J, Schoenfeld BJ 等，2022，*Effects of resistance training performed to repetition failure or non-failure on muscular strength and hypertrophy: A systematic review and meta-analysis*。荟萃分析证实保留 1–2 次余力的非力竭训练在促进肌肥大和力量增长方面与力竭训练等效，同时显著降低过度训练与关节劳损风险。[文献链接](https://pubmed.ncbi.nlm.nih.gov/33497853/)。
-3. Bell L 等，2023，*The effect of periodic tapering and deloading in resistance training*。系统论述抗阻训练中定期减量（Deload）对中枢神经疲劳恢复与长期超量恢复机制的支持。

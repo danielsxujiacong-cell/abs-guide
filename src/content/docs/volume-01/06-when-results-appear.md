@@ -55,10 +55,3 @@ sidebar:
 **健身是一场只属于你自己的长跑。** 只要今天的你比一个月前能多做两个俯卧撑、走路更轻快，你就在走在完全正确的轨道上。
 
 放平心态，踏实记录，看看怎么用最简单的方式衡量自己的每一步成长：[07 如何判断自己有没有进步？](07-tracking-progress.md)！
-
----
-
-## 参考资料与证据说明
-
-1. Folland JP, Williams AG. 2007. *The adaptations to strength training: morphological and neurological contributions to increased strength*. Sports Med. 经典综述指出抗阻训练初期力量快速提升主要源自神经系统协调与运动单位招募等神经适应，随后形态学（肌肉肥大）贡献逐渐占据主导。
-2. Damas F 等，2016，早期抗阻训练肌横截面积与水肿研究。指出初期短期内的肌肉尺寸微变常伴随生理性水分与肌糖原充盈，真实的肌纤维增生需要经过系统性持续负荷积累方可稳定呈现。

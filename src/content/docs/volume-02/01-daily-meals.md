@@ -71,9 +71,3 @@ sidebar:
 第二天醒来，回归正常的三餐即可，千万别搞什么“全天断食”或者疯狂运动去“惩罚赎罪”。饮食是生活里最温暖的享受，健身是为了让你活得更有精力，而不是让你被一张死板的食谱绑架。
 
 今天迈出的第一步非常简单：回想一下你昨天的三餐，找出最明显缺的一样（比如早餐缺蛋白质，或者午晚饭几乎没有蔬菜），明天吃饭时，只把这一样补上。
-
-## 参考资料与证据说明
-
-1. Jäger R 等，2017，*International Society of Sports Nutrition Position Stand: protein and exercise*。用于运动人群蛋白质参考范围（1.4–2.0 g/kg/d）及整食物营养优先说明。[原始文献](https://link.springer.com/article/10.1186/s12970-017-0177-8)，DOI：10.1186/s12970-017-0177-8。
-2. WHO，*Healthy diet*。用于食物多样性、平衡膳食与非极端饮食的科学共识。[官方指南](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)。
-3. 中国营养学会，2022，《中国居民膳食指南》。用于谷薯为主、多吃蔬菜与大豆制品的日常饮食参考。

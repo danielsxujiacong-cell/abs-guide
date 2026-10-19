@@ -64,9 +64,3 @@ sidebar:
   **强烈不推荐！** 家用椅子的重心很不稳，一旦手掌打滑或者椅子向外翻倒，整个人砸在地上极易造成手腕挫伤。如果今天没去公园，老老实实在家里做地面俯卧撑，效果一样顶呱呱。
 - **每周怎么跟俯卧撑搭配？**
   双杠和俯卧撑都属于“上肢推力”。如果你这一天练了双杠，俯卧撑就少做两组；或者周二主练俯卧撑，周六去公园主练双杠，推力动作隔天安排，让肌纤维舒舒服服超量恢复。
-
-## 参考资料与证据说明
-
-1. McKenzie A 等，2022，*Bench, Bar, and Ring Dips: Do Kinematics and Muscle Activity Differ?*。研究论述双杠动作中身体前倾角度与肩关节水平内收对胸大肌下束和肱三头肌长头的激活机制。[PMC 全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/)。
-2. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。上肢垂直推力动作的适宜负荷管理、离心控制与循序渐进原则。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-3. Escamilla RF 等，2009，*Triceps and pectoral muscle activation during dip and push-up variations*。对比不同自重推力动作的肌电信号与关节受力特征。

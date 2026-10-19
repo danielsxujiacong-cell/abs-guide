@@ -61,9 +61,3 @@ sidebar:
 - **结合腰围和穿衣感**：如果你的体重没怎么变，但裤腰松了一格、做引体向上越来越轻快、镜子里的肩膀更宽、肚子更平整，说明你很可能在增肌的同时掉了脂肪，身体组成正在往更好的方向发展。
 
 热量帮助我们认清体型变化的底层逻辑。别让冰冷的卡路里数字绑架你的心情，吃营养完整的饭，做扎扎实实的自重训练，身体自然会给出最好的回馈。
-
-## 参考资料与证据说明
-
-1. Aragon AA 等，2017，*International society of sports nutrition position stand: diets and body composition*。用于能量平衡、热量缺口与身体成分关系的科学共识。[原始文献](https://pmc.ncbi.nlm.nih.gov/articles/PMC5470183/)，DOI：10.1186/s12970-017-0174-y。
-2. Hall KD 等，2012，*Energy balance and its components: implications for body weight regulation*。用于说明能量收支是动态系统，水分与糖原波动不能简单等同于脂肪变化。[PubMed 全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/)，DOI：10.3945/ajcn.112.036350。
-3. WHO，*Healthy diet*。用于限制添加糖、控制过量饱和脂肪与维持平衡膳食的总体建议。[官方链接](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)。

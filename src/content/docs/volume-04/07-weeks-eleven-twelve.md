@@ -86,14 +86,3 @@ sidebar:
 但请先别急着把运动鞋扔进衣柜。在接下来的最后一章——**`08 12 周之后，如何继续进步？`**，我们将讨论如何防止反弹，以及在完成了这十二周的地基之后，如何把健身变成陪伴你一辈子的生活方式。
 
 恭喜你，你已经做到了！
-
----
-
-## 参考资料与证据说明
-
-本章关于宏观周期（Macrocycle）终期评估、神经肌肉长期适应保留，以及渐进体能阶段性测试的安全准则，基于以下运动科学与周期化训练文献：
-
-1. **Bompa, T. O., & Buzzichelli, C. (2018).** *Periodization: theory and methodology of training.* 6th ed. Champaign, IL: Human Kinetics.
-   * **证据说明**：周期化力量训练经典理论指出，一个为期 12 周的初级宏观周期（Macrocycle）旨在全面完成基础动作模式固化、结缔组织强化与基础肌力积累。在周期末尾进行的标准化技术与动作耐受度测试，应当以评估技术控制能力（而非盲目测试单次极限 1RM）为导向，以确保训练的长期安全性与持续性。本章关于“以标准动作质量和受控次数作为毕业考”的设定严格依据该理论体系。
-2. **American College of Sports Medicine (ACSM). (2018).** *ACSM's Guidelines for Exercise Testing and Prescription.* 10th ed. Philadelphia: Wolters Kluwer.
-   * **证据说明**：ACSM 体能评定指南指出，肌肉力量与肌肉耐力的评估应当采用受试者已充分熟练的多关节复合动作（如俯卧撑与深蹲），并强调在测试中以动作轨迹变形或出现代偿作为终止判定点。本章各项动作考核标准及安全红线均遵循该指南规范。

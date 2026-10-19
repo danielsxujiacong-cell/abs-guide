@@ -72,9 +72,3 @@ sidebar:
 - **其余日子**：饭后散散步，正常吃好一日三餐。
 
 身体感觉良好，下周就试着让每个动作多做 1–2 次；如果哪天加班太累，就果断休息或者减掉一组。健身是一场一辈子的长跑，用最舒服的姿态开始，你才能走得又稳又远！
-
-## 参考资料与证据说明
-
-1. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。抗阻训练渐进负荷、全身主要肌群刺激与新手低门槛起步原则。[PubMed 原文](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-2. Kikuchi N、Nakazato K，2017，*Low-load bench press and push-up induce similar muscle hypertrophy and strength gain*。研究证实根据自身水平降低负荷的自重推力动作（如靠墙/跪姿/高位）同样能有效促进力量提升与肌纤维肥大。[文献链接](https://pubmed.ncbi.nlm.nih.gov/29541130/)。
-3. WHO，2020，*Guidelines on physical activity and sedentary behaviour*。推荐每周进行至少 2 次涉及主要肌群的抗阻活动。[世卫组织官方指南](https://www.who.int/publications/i/item/9789240015128)。

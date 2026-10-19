@@ -74,9 +74,3 @@ sidebar:
 哪个握法你的手腕更舒服，就从哪个开始练，完全不用有“只有正手才算真正的街健”的教条偏见。
 
 走向公园，大胆把手搭在横杠上，拉动自己的身体，你会发现自己远比想象中更有力量！
-
-## 参考资料与证据说明
-
-1. Youdas JW 等，2010，*Surface electromyographic activation patterns and elbow joint motion during a pull-up, chin-up, or perfect-pullup rotational exercise*。肌电图研究证实背阔肌、斜方肌下束与屈肘肌群在引体向上动作中的高度协同收缩。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/21068680/)。
-2. Urbanczyk CA 等，2020，*Avoiding high-risk rotator cuff loading: Muscle force during three pull-up techniques*。分析不同握法在肩胛骨与肩袖肌群上的负荷分布与动作控制要点。[文献链接](https://pubmed.ncbi.nlm.nih.gov/32715526/)。
-3. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。垂直拉力动作递进负荷及辅助变式训练指南。[原始文献](https://pubmed.ncbi.nlm.nih.gov/41843416/)。

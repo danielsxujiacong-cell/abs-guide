@@ -73,10 +73,3 @@ sidebar:
    蛋白粉只是一种从牛奶或大豆里提取的“便携脱水干粮”。如果你平时肉蛋奶吃得够，**完全没有必要花这笔钱**。它唯一的优势是方便快捷（出差、赶时间没法吃肉时摇一杯），但绝不比一块真正的香煎鸡胸肉或炖牛肉更神奇。
 
 明天早晨起床，就去楼下便利店或早餐摊买个茶叶蛋、拿盒牛奶。把第一顿饭的蛋白质补上，你就已经跑赢了绝大多数盲目节食的人。
-
-## 参考资料与证据说明
-
-1. Jäger R 等，2017，*International Society of Sports Nutrition Position Stand: protein and exercise*。支持规律抗阻训练人群日常蛋白质推荐摄入量（1.4–2.0 g/kg/d）及全天均匀摄入原则。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/28642676/)，DOI：10.1186/s12970-017-0177-8。
-2. Morton RW 等，2018，*A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults*。系统综述与荟萃分析表明，蛋白质摄入达到约 1.6 g/kg/d 即可支持绝大部分抗阻训练的肌肥大适应。[PubMed 原文](https://pubmed.ncbi.nlm.nih.gov/28698222/)。
-3. EFSA，2012，*Scientific Opinion on Dietary Reference Values for protein*。欧洲食品安全局成人一般健康参考值（0.83 g/kg/d）。[EFSA 报告](https://www.efsa.europa.eu/en/press/news/120209)。
-4. 中国营养学会，《中国食物成分表（标准版）》。用于常见食材（鸡蛋、牛奶、鸡肉、猪里脊、豆腐等）营养素与蛋白质参考换算。

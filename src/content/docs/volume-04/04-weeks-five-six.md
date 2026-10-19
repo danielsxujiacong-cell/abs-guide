@@ -136,13 +136,3 @@ sidebar:
 在这两周里，你不仅体验到了通过微调身体角度、增加底端停顿来给肌肉“加重量”，更重要的是，你学会了如何在难度上升时保护自己的关节、守住动作底线。这时候，你可能会在日常洗脸、穿衣服或者爬楼梯时，隐约感觉到后背、胸口或大腿比一个月前紧实了一点。
 
 在直接跳进下半程的训练之前，我们不需要盲目加速。接下来的**第 7–8 周（检查自己的进步）**，我们将教你如何用客观、不焦虑的方法，给自己做一次全面的“中期体检”——看看这一个半月以来，你的动作控制、恢复能力和身体状态到底发生了哪些实实在在的变化。
-
----
-
-## 参考资料与证据说明
-
-本章关于渐进式超负荷原则、自重训练中的生物力学杠杆调节、动作节奏（离心与等长停顿）以及结缔组织安全适应的阐述，基于以下运动科学文献与权威指南：
-
-1. American College of Sports Medicine (ACSM)，2009，*Progression models in resistance training for healthy adults*。[PubMed 原始记录与摘要](https://pubmed.ncbi.nlm.nih.gov/19204579/)，[DOI](https://doi.org/10.1249/MSS.0b013e3181915670)。该指南明确了“渐进式超负荷（Progressive Overload）”是抗阻训练持续获得力量与肌肥大适应的核心基本原则，指出负荷的递增应当是渐进且小幅度的，且任何难度的提升均应以维持正确技术为前提。
-2. Schoenfeld BJ，Ogborn DI，Krieger JW，2015，*Effect of repetition duration during resistance training on muscle hypertrophy: a systematic review and meta-analysis*。[PubMed 原始记录与摘要](https://pubmed.ncbi.nlm.nih.gov/25601394/)，[DOI](https://doi.org/10.1007/s40279-015-0304-0)。系统综述表明受控动作节奏配合适度张力时间能有效诱发肌肥大，放慢离心与等长停顿是自重训练增加有效刺激的可靠手段。
-3. Suchomel TJ，Nimphius S，Bellon CR，Stone MH，2018，*The Importance of Muscular Strength: Training Considerations*。[PubMed 原始记录与摘要](https://pubmed.ncbi.nlm.nih.gov/29372481/)，[DOI](https://doi.org/10.1007/s40279-018-0862-z)。综述强调在力量发展模型中先建立动作模式耐受度、再逐步过渡到更高机械负荷以降低结缔组织损伤风险。

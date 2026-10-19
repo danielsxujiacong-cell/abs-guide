@@ -58,8 +58,3 @@ sidebar:
 3. **身体感受如何？** 肌肉有微酸充血感是好事，如果有明显的关节刺痛，及时调小动作幅度。
 
 顺利打完前四场训练卡，你已经成功跨越了健身路上最容易放弃的新手关口！带着这份从容与自信，我们将在第 3–4 周迎接更精准的动作质检！
-
-## 参考资料与证据说明
-
-1. WHO，2020，*Guidelines on physical activity and sedentary behaviour*。一般成年人主要肌群强化活动每周至少 2 天的公共卫生推荐。[官方发布](https://www.who.int/publications/i/item/9789240015128)。
-2. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。抗阻训练初期的习惯建立、低负荷起步与频率规划指南。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/41843416/)。

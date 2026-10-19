@@ -62,9 +62,3 @@ sidebar:
 3. **吃得过猛的状态**：体重蹭蹭往上涨，但引体反而因为身体变重拉不起来了，腰围肉眼可见变粗。这时请果断把加餐减半，或者砍掉零食，把饮食重心重新放回优质蛋白与干净的主食上。
 
 增肌是一场耐心的耕作。踏实把每一口饭吃好，把每一次训练做扎实，镜子里的体型蜕变只是时间问题。
-
-## 参考资料与证据说明
-
-1. Aragon AA 等，2017，*International society of sports nutrition position stand: diets and body composition*。用于热量轻度盈余与力量训练协同支持去脂体重增长的科学依据。[PMC 全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5470183/)。
-2. Morton RW 等，2018，*A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults*。系统论证蛋白质充足与渐进超负荷对肌肉肥大的核心决定机制。[PubMed 链接](https://pubmed.ncbi.nlm.nih.gov/28698222/)。
-3. 中国营养学会，2022，《中国居民膳食指南》。用于健康成年人平衡膳食与合理加餐实践规范。

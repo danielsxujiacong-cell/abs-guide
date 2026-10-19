@@ -60,9 +60,3 @@ sidebar:
    15 分钟足够救命！花 2 分钟原地活动关节，做 2 组扎实的俯卧撑，紧接着做 2 组深蹲。心率微微上升，肌肉得到充血激活，你就已经守住了今天的运动习惯！
 
 把每一次训练当成忙碌生活里的一场充电和放松，而不是打卡交差。能在自己的节奏里舒服练下去，你才真正赢了！
-
-## 参考资料与证据说明
-
-1. WHO，2020，*Guidelines on physical activity and sedentary behaviour*。全球公共卫生指南推荐每周至少进行 2 天涉及大肌群的肌肉强化活动。[世卫组织官方文献](https://www.who.int/publications/i/item/9789240015128)。
-2. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。全面分析每周 2 天与 3 天训练频率对肌肥大、力量增长与神经疲劳恢复的最优性价比区间。[PubMed 索引](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
-3. Schoenfeld BJ 等，2016，*Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis*。荟萃分析表明，在训练总量相近的前提下，每周每个肌群被训练 2 次能够产生优异的肌肥大效应。

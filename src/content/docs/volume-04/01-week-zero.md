@@ -86,8 +86,3 @@ sidebar:
 - [ ] 掌握基础动作口诀，完成第 1 次轻量试练；
 - [ ] 观察肌肉恢复，随手记录 3 天饮食并找出最容易改进的一处；
 - [ ] 完成第 2 次试练，复盘时间与动作版本，自信开启下一周！
-
-## 参考资料与证据说明
-
-1. WHO，2020，*Guidelines on physical activity and sedentary behaviour*。全球公共卫生指南推荐逐步增加中等强度抗阻活动与克服久坐习惯。[世卫组织官方指南](https://www.who.int/publications/i/item/9789240015128)。
-2. Currier BS 等，2026，*American College of Sports Medicine Position Stand: Progressions in Resistance Training for Healthy Adults*。抗阻训练渐进负荷、全身主要肌群刺激与新手低门槛起步原则。[PubMed 原文](https://pubmed.ncbi.nlm.nih.gov/41843416/)。
