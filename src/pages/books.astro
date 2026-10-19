@@ -3,7 +3,7 @@ import Publication from '../layouts/Publication.astro';
 import Bookshelf from '../components/Bookshelf.astro';
 import { books, publicationCounts } from '../lib/books';
 ---
-<Publication title="书架">
+<Publication title="书架" description="薄肌最终指南全书四册书架：从认识身体、日常三餐、自重动作库到 12 周训练计划，全书 32 篇原创实战指南已全量完结。">
   <section class="books-intro"><p class="eyebrow">薄肌最终指南 / 书架</p><h1>慢慢读，<br />一步一步练。</h1><p>{books.length} 册书，全书共 {publicationCounts.total} 章实战指南已全量完结上线（已发布 {publicationCounts.published} 章）。从你现在的能力开始，踏实走好每一步。</p><a data-continue class="continue-link" hidden>继续阅读</a></section>
   <Bookshelf />
   <p class="books-footnote">点击任意一册即可进入完整章节目录与正文阅读。</p>

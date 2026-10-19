@@ -1,12 +1,13 @@
 {
   "name": "abs-guide",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
     "check": "astro check",
     "build": "astro build",
+    "build:assets": "node scripts/build-assets.cjs",
     "preview": "astro preview --host 127.0.0.1",
     "verify": "node scripts/verify.mjs"
   },

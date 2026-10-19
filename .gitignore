@@ -27,3 +27,7 @@ dist/
 *.pfx
 credentials*.json
 .edgeone/
+
+# Scratch and local handoffs
+ABS_GUIDE_Codex_Handoff*.md
+gemini write vol4/

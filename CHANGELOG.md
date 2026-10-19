@@ -1,5 +1,16 @@
 # 更新日志
 
+## v0.8.4 · 2026-10-19
+
+- **补齐标准 robots.txt**：新增 `public/robots.txt`，规范爬虫抓取规则并直接指引 `sitemap-index.xml`，保障百度、Google、必应等主流搜索引擎的收录效果。
+- **上线 Open Graph 与 Twitter Cards 社交分享卡片**：
+  - 首页与书架（`Publication.astro`）完整注入 `og:title`、`og:description`、`og:image`、`og:url`、`og:site_name`、`twitter:card` 以及标准 `canonical` 规范链接。
+  - 在微信、朋友圈、Telegram、X (Twitter)、Discord、飞书、钉钉等平台分享时，自动呈现高质量 1200×630 尺寸的精美微缩摘要卡片。
+  - 阅读器全局配置（`astro.config.mjs`）同步补充 `og:image` 与 `twitter:image`。
+- **配置移动端“添加到主屏幕”图标（Apple Touch Icon）**：
+  - 生成 180×180 像素高质量原生拟物 App 图标（`apple-touch-icon.png`）。
+  - 手机读者在 Safari 或 Chrome 点击“添加到主屏幕”时，桌面上将呈现精致力量感图标，宛如独立的原生 App。
+
 ## v0.8.3 · 2026-10-19
 
 - 导航栏 Brand 标识升级：首页与全站阅读器顶部 Logo 图标由 `A.` 更新为更有辨识度与活力的肌肉手臂 Emoji `💪`。

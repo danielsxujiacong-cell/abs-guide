@@ -2,17 +2,43 @@
 import '../styles/site.css';
 import SiteTitle from '../components/SiteTitle.astro';
 import ReaderTools from '../components/ReaderTools.astro';
-const { title, description = '免费开源、长期更新的中文街头健身指南。' } = Astro.props;
+const { title, description = '一本普通人也能读懂的薄肌指南。从吃好家常三餐，到完成人生第一个引体向上。全书四册 32 篇原创实战指南完结版。' } = Astro.props;
+const siteUrl = 'https://abs.danielxu.cn';
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const fullTitle = `${title} · 薄肌最终指南`;
+const ogImageUrl = `${siteUrl}/images/og-share.png`;
 ---
 <!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon-flex-v060.svg" type="image/svg+xml" />
-    <title>{title} · 薄肌最终指南</title>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / 社交分享卡片 (微信、Telegram、Discord、Slack 等) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ABS GUIDE · 薄肌指南" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="zh_CN" />
+
+    <!-- Twitter / X 社交卡片 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <script is:inline>
       try { const t = localStorage.getItem('starlight-theme') || 'auto'; document.documentElement.dataset.theme = t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t; } catch {}
     </script>
