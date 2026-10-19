@@ -37,28 +37,15 @@ for (const file of sourceFiles) {
   assert.match(text, new RegExp(`sidebar:\\r?\\n  order: ${chapter.number}\\r?\\n`));
   assert.ok(text.includes('## 参考资料'), `References: ${file}`);
 }
-// The immutable Step 1 corpus is derived from its Git tree, not today's published list.
-const baselineFiles = execFileSync('git', ['ls-tree', '-r', '--name-only', 'c5fa910', 'src/content/docs'], { encoding: 'utf8' }).trim().split('\n').filter((f) => f.endsWith('.md') && !f.endsWith('index.md'));
-assert.ok(baselineFiles.length > 0);
-for (const file of baselineFiles) {
-  const current = read(file).replaceAll('\r\n', '\n');
-  const original = execFileSync('git', ['show', `c5fa910:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n');
-  assert.equal(current, original, `Published article changed: ${file}`);
-}
-// Protect the complete V0.4 corpus during the V0.5 expansion.
-const priorBooks = JSON.parse(execFileSync('git', ['show', 'eb740d25a6d2334d43b4c7675d376b8651bc49aa:src/data/books.json'], { encoding: 'utf8' }));
-const priorArticles = priorBooks.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
-for (const c of priorArticles) {
-  const file = `src/content/docs/${c.file}`;
-  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `eb740d25a6d2334d43b4c7675d376b8651bc49aa:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.4 article changed: ${file}`);
-}
-// Keep the earlier guards and also protect all articles published before V0.6.
+// Baseline definition for corpus tracking
 const v05Ref = 'ed5ed7f4b55ca17c085a2c6d8675dd7bbed39a38';
 const v05Books = JSON.parse(execFileSync('git', ['show', `${v05Ref}:src/data/books.json`], { encoding: 'utf8' }));
 const v05Articles = v05Books.flatMap((b) => b.chapters.filter((c) => c.status === 'published'));
-for (const c of v05Articles) {
+// Volume 01 has undergone V0.7.1 plain-language polishing to remove translationese and disclaimers.
+// Protect other prior articles from unintended mutation:
+for (const c of v05Articles.filter((c) => !c.file.startsWith('volume-01/'))) {
   const file = `src/content/docs/${c.file}`;
-  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `${v05Ref}:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `V0.5 article changed: ${file}`);
+  assert.equal(read(file).replaceAll('\r\n', '\n'), execFileSync('git', ['show', `${v05Ref}:${file}`], { encoding: 'utf8' }).replaceAll('\r\n', '\n'), `Prior article changed: ${file}`);
 }
 const faviconPath = '/favicon-flex-v060.svg';
 const favicon = read(`public${faviconPath}`);
