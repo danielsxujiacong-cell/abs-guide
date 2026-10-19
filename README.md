@@ -1,40 +1,55 @@
-# 薄肌最终指南
+# 薄肌最终指南 (ABS GUIDE)
 
-**ABS GUIDE**
+<div align="center">
+  <p><b>免费开源的中文街头健身与自重训练知识库 · 全书四册 32 章完结版</b></p>
+  <p>一本真正写给中国普通男生的薄肌养成指南：从吃好家常三餐，到完成人生第一个引体向上。</p>
 
-免费开源的中文街头健身知识库。
+  <p>
+    <a href="https://abs.danielxu.cn/"><img src="https://img.shields.io/badge/🌐_在线阅读-abs.danielxu.cn-45614c?style=for-the-badge" alt="在线阅读"></a>
+    <a href="https://github.com/danielsxujiacong-cell/abs-guide"><img src="https://img.shields.io/badge/📖_全书状态-32%20篇全量完结-blue?style=for-the-badge" alt="完结状态"></a>
+    <a href="CONTENT_LICENSE.md"><img src="https://img.shields.io/badge/许可-CC_BY--SA_4.0-green?style=for-the-badge" alt="License"></a>
+  </p>
 
-永久免费阅读，持续更新。当前版本 **v0.8.2 · 全书四册 32/32 正文完结**，全书已完成全面去公文体、通俗生活化语言重写，彻底剥离学术参考资料尾巴与已发布机械后缀，首页上线新手捷径地图与一键回顶浮钮，变身纯粹极简接地气的民间实战宝典。网站使用同一套 Markdown 静态构建，无需账户或数据库。部署验收状态见 [交接记录](docs/HANDOFF.md)。
+  <p>👉 <b><a href="https://abs.danielxu.cn/">点击进入官方在线阅读网站（体验最佳，支持移动端/深色模式/中文全文搜索） ↗</a></b></p>
+</div>
 
-## 项目理念
+---
 
-用普通人能听懂的话，把为什么练、怎样练、怎么吃说清楚。以 Calisthenics 街头健身和自重训练为核心，不要求健身房会员、外部负重、付费课程或补剂。没有短期身材保证，也不把“七分吃三分练”当作科学比例。
+## ⚡ 为什么读这本书？
 
-“薄肌”是日常审美词，不是医学分类。希望读者逐步获得力量、肌肉和更稳定的生活习惯，而不是追逐统一体脂率。
+- 🙅‍♂️ **零会员卡、零器械门槛**：告别推销与健身房办卡焦虑，家里的地板、小区的单双杠就是你的训练场。
+- 🍚 **完全贴合国人一日三餐**：破除西方水煮鸡胸肉与西兰花套路，手把手教你在猪肉、牛肉、鱼虾、外卖、食堂和家常饭里吃出精瘦体型。
+- 🗣️ **通俗大白话与画面感口诀**：没有晦涩生硬的解剖学术语，全是“手肘 45 度箭头”、“沉肩迎杠”等一听就懂的发力细节。
+- 📅 **12 周防放弃极简排班**：每周只需练 2~3 天，每次 30~45 分钟，打工人、学生党轻松无痛融入日常生活。
 
-## 适合什么人
+---
 
-想第一次开始健身、希望理解饮食与训练的一般健康成年读者，尤其是希望从低成本自重练习起步的普通男生。动作按能力降低难度，不以标准引体向上或双杠臂屈伸作为新手门槛。
+## 🎯 适合什么人
 
-## 为什么选择街头健身
+- 想第一次开始系统健身、希望彻底弄清饮食与训练底层逻辑的零基础普通人。
+- 不想办健身房会员卡、希望在家里或公园用极低成本起步的打工人与学生党。
+- 所有动作均配备降阶与升阶指引，即使现在一个引体向上或标准俯卧撑都做不了，也能从推墙和低杠轻松开始。
 
-家中可以先做靠墙俯卧撑、深蹲和地面核心练习；公园的可靠单杠、双杠和低杠能补充拉力与支撑训练。自重训练可以使用公共设施，引体向上是有效的背部训练动作。没有单杠时先开始基础部分，再寻找安全设施；不推荐不稳固家具和危险悬挂替代。
+---
 
-## 从基础文章开始读
+## 🚀 新手热门速查（点击直达正文）
 
-1. [到底什么是薄肌？](src/content/docs/volume-01/01-what-is-lean.md)
-2. [我应该从哪里开始？](src/content/docs/volume-01/02-where-to-start.md)
-3. [普通人的一日三餐到底怎么吃？](src/content/docs/volume-02/01-daily-meals.md)
-4. [第一次自重训练，应该从哪里开始？](src/content/docs/volume-03/01-first-workout.md)
-5. [第 0 周：开始你的 12 周训练计划](src/content/docs/volume-04/01-week-zero.md)
+| 🎯 你的痛点与目标 | 📖 推荐阅读章节 |
+| :--- | :--- |
+| **普通人一日三餐到底怎么吃** | [普通人的一日三餐到底怎么吃？](src/content/docs/volume-02/01-daily-meals.md) |
+| **外卖、食堂与聚餐避坑** | [外卖、食堂和朋友聚餐怎么吃？](src/content/docs/volume-02/07-eating-out.md) |
+| **如何可持续减脂不反弹** | [想减少脂肪，怎么吃才可持续？](src/content/docs/volume-02/06-eating-for-fat-loss.md) |
+| **第一次自重训练怎么练** | [第一次自重训练，应该从哪里开始？](src/content/docs/volume-03/01-first-workout.md) |
+| **零基础练出第一个引体向上** | [引体向上：如何练出强壮的背部？](src/content/docs/volume-03/03-pull-ups.md) |
+| **标准俯卧撑发力细节口诀** | [俯卧撑：从简单到进阶](src/content/docs/volume-03/02-push-ups.md) |
+| **打工人每周排班与抄作业** | [第 0 周：开始你的 12 周训练计划](src/content/docs/volume-04/01-week-zero.md) · [一周应该练几次？如何安排？](src/content/docs/volume-03/07-weekly-schedule.md) |
 
-直接点击即可在 GitHub 阅读，无需安装软件或下载项目。也可从[全书阅读入口](src/content/docs/index.md)进入。
+---
 
-## 四册书籍完整目录
-
-以下为全书完整正式目录（四册共 32 篇原创实战正文已全部完结发布）：
+## 📚 四册全书完整目录（共 32 篇原创实战正文已全量完结）
 
 ### 第一册：从零开始认识薄肌
+> 破除身材与体脂率焦虑，认清身体起点，做好起步准备。
 
 - [01 到底什么是薄肌？](src/content/docs/volume-01/01-what-is-lean.md)
 - [02 我应该从哪里开始？](src/content/docs/volume-01/02-where-to-start.md)
@@ -46,6 +61,7 @@
 - [08 开始健身前的准备清单](src/content/docs/volume-01/08-starting-checklist.md)
 
 ### 第二册：吃出适合自己的好身材
+> 告别水煮菜，把家常饭、食堂和外卖变成支持增肌减脂的日常燃料。
 
 - [01 普通人的一日三餐到底怎么吃？](src/content/docs/volume-02/01-daily-meals.md)
 - [02 热量是什么，为什么影响体重？](src/content/docs/volume-02/02-energy.md)
@@ -57,6 +73,7 @@
 - [08 蛋白粉、肌酸和常见饮食误区](src/content/docs/volume-02/08-supplements-myths.md)
 
 ### 第三册：街头健身与自重训练指南
+> 掌握推、拉、腿、核心基础自重动作，画面感发力口诀与每周极简排班。
 
 - [01 第一次自重训练，应该从哪里开始？](src/content/docs/volume-03/01-first-workout.md)
 - [02 俯卧撑：从简单到进阶](src/content/docs/volume-03/02-push-ups.md)
@@ -68,6 +85,7 @@
 - [08 如何提高难度、突破瓶颈并恢复？](src/content/docs/volume-03/08-progression-recovery.md)
 
 ### 第四册：12 周街头健身实践计划
+> 阶梯式打卡课表，从第 0 周测试到第 12 周大检阅，建立终身运动习惯。
 
 - [01 第 0 周：开始你的 12 周训练计划](src/content/docs/volume-04/01-week-zero.md)
 - [02 第 1–2 周：建立训练习惯](src/content/docs/volume-04/02-weeks-one-two.md)
@@ -78,45 +96,40 @@
 - [07 第 11–12 周：完成第一个训练周期](src/content/docs/volume-04/07-weeks-eleven-twelve.md)
 - [08 12 周之后，如何继续进步？](src/content/docs/volume-04/08-beyond-twelve-weeks.md)
 
-## 科学资料说明
+---
 
-全书遵循极简实操与科学循证理念，底层资料源集中登记见 [sources/references.md](sources/references.md)。正文采用通俗接地气的纯白话表达，不堆砌学术文献后缀以保持沉浸专注的阅读体验；区分科学事实与民间误区，帮助零基础新手扎实起步。
+## 🔬 科学循证说明
 
-用户提供的视频仅登记为选题线索；因未能读取核实，不以其内容作为正文证据。不转载文案、字幕或第三方图片。
+全书遵循极简实操与科学循证理念，底层学术研究与资料源集中登记见 [sources/references.md](sources/references.md)。正文采用通俗接地气的纯白话表达，不堆砌学术文献后缀以保持沉浸专注的阅读体验；区分科学事实与民间误区，帮助零基础新手扎实起步。
 
-## 如何贡献
+---
 
-欢迎纠错、补充原始研究、改进普通读者的可读性及提出能力分级建议。请先阅读 [贡献指南](CONTRIBUTING.md)，通过 Issue 或 Pull Request 提交。不要上传私人健康资料或没有授权的材料。
+## 🤝 如何参与贡献
 
-## 开源协议
+欢迎纠错、补充优质案例、改进普通读者的可读性及提出动作分级建议。请先阅读 [贡献指南](CONTRIBUTING.md)，通过 Issue 或 Pull Request 提交。
 
-原创书籍内容与内容型文档采用 **CC BY-SA 4.0**，详见 [内容许可](CONTENT_LICENSE.md)。网站代码及明确归为代码的文件采用 [MIT](LICENSE)。第三方资料、商标与图片保留各自权利，引用不意味着再授权。
+---
 
-## 仓库结构与同步
+## 📄 开源协议
 
-`src/content/docs/` 是唯一正文来源；`src/data/books.json` 统一维护封面、介绍、章节顺序和发布状态；只有元数据明确发布且真实文件存在的章节才提供阅读链接。`sources/` 登记资料；`public/images/` 为未来授权图片预留。封面为原创 CSS 图形，无第三方图片。
+- 原创书籍内容采用 **[CC BY-SA 4.0](CONTENT_LICENSE.md)** 许可协议。
+- 网站构建代码采用 **[MIT](LICENSE)** 许可协议。
 
-首页 `/` 和书架 `/books/` 是独立出版物页面；总目录 Markdown 保留原文件位置，以 `slug: read` 生成 `/read/`。四册目录 `/volume-01/` 至 `/volume-04/` 与已发布正文沿用既有路径。网站构建时转换 Markdown 链接，GitHub 中的原始相对链接保持有效。
+---
 
-## 本地运行与网站检查
+## 💻 本地运行与网站构建
 
-使用 Node.js 22.11.0 或更高版本，安装依赖后运行：
+本项目基于 [Astro 5](https://astro.build/) 与 [Starlight](https://starlight.astro.build/) 构建。使用 Node.js 22.11.0 或更高版本：
 
 ```sh
 npm ci
-npm run dev
+npm run dev      # 启动本地开发服务器
+npm run build    # 构建静态网站产物
+npm run verify   # 运行全站自动化验证套件
 ```
 
-发布检查：`npm run check`、`npm run build`、`npm run verify`。生产预览：`npm run preview`。搜索使用构建后的 Pagefind 索引，应在生产预览中测试。`verify` 动态检查发布元数据与真实文件、原五篇正文与 Step 1 基线一致、规划目录、相对链接、网站路由、小节锚点及产物。
+---
 
-阅读器提供主题切换、中文搜索、当前小节目录、已发布章节翻页、GitHub 原文与 Issue 反馈。仅使用当前浏览器 localStorage 记住最后阅读章节及主题，不上传阅读记录、不主动恢复滚动位置。
+## 📝 更新日志
 
-## EdgeOne Makers 部署
-
-通过 Git 集成连接本仓库 `main`，安装 `npm ci`，构建 `npm run build`，输出 `dist`。`edgeone.json` 已按官方配置字段声明 Node 22.11.0 与构建参数。采用静态多页面路由，不设置把未知路径重写成首页的 SPA 规则。正式部署、域名和自动同步的实测状态见 [部署记录](docs/DEPLOYMENT.md)。
-
-从另一台电脑继续：Clone 本仓库；开始前检查 `git status`，工作区干净时执行 `git pull --ff-only`；保留本地工作，不强制覆盖。完成修改后检查内容与许可，提交并 Push。GitHub 是最终项目材料的同步位置。
-
-## 更新日志
-
-见 [CHANGELOG.md](CHANGELOG.md)。V0.7.0 完成全书四册共三十二章全部正文编写，全书已正式全量发布。
+完整发版历史与更新说明请查阅 [CHANGELOG.md](CHANGELOG.md)。
