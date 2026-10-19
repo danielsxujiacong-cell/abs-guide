@@ -206,17 +206,20 @@
       {
         "number": 6,
         "title": "第 9–10 周：调整训练和饮食",
-        "status": "planned"
+        "file": "volume-04/06-weeks-nine-ten.md",
+        "status": "published"
       },
       {
         "number": 7,
         "title": "第 11–12 周：完成第一个训练周期",
-        "status": "planned"
+        "file": "volume-04/07-weeks-eleven-twelve.md",
+        "status": "published"
       },
       {
         "number": 8,
         "title": "12 周之后，如何继续进步？",
-        "status": "planned"
+        "file": "volume-04/08-beyond-twelve-weeks.md",
+        "status": "published"
       }
     ]
   }

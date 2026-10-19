@@ -74,9 +74,9 @@
 - [03 第 3–4 周：掌握基础自重动作](src/content/docs/volume-04/03-weeks-three-four.md) · 已发布
 - [04 第 5–6 周：逐渐增加训练难度](src/content/docs/volume-04/04-weeks-five-six.md) · 已发布
 - [05 第 7–8 周：检查自己的进步](src/content/docs/volume-04/05-weeks-seven-eight.md) · 已发布
-- 06 第 9–10 周：调整训练和饮食 · 计划中
-- 07 第 11–12 周：完成第一个训练周期 · 计划中
-- 08 12 周之后，如何继续进步？ · 计划中
+- [06 第 9–10 周：调整训练和饮食](src/content/docs/volume-04/06-weeks-nine-ten.md) · 已发布
+- [07 第 11–12 周：完成第一个训练周期](src/content/docs/volume-04/07-weeks-eleven-twelve.md) · 已发布
+- [08 12 周之后，如何继续进步？](src/content/docs/volume-04/08-beyond-twelve-weeks.md) · 已发布
 
 ## 科学资料说明
 
@@ -119,4 +119,4 @@ npm run dev
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。已发布二十九篇正文，后续三章计划中，不开发训练工具。
+见 [CHANGELOG.md](CHANGELOG.md)。V0.7.0 完成全书四册共三十二章全部正文编写，全书已正式全量发布。
