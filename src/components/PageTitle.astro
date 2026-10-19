@@ -1,0 +1,92 @@
+---
+const PAGE_TITLE_ID = '_top';
+import { findChapter } from '../lib/books';
+import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const title = Astro.locals.starlightRoute.entry.data.title;
+const chapter = findChapter(Astro.url.pathname);
+
+let stats: { words: number; minutes: number } | null = null;
+if (chapter && chapter.file) {
+  const filePath = resolve(process.cwd(), 'src/content/docs', chapter.file);
+  if (existsSync(filePath)) {
+    const text = readFileSync(filePath, 'utf8');
+    const clean = text
+      .replace(/^---[\s\S]*?---/, '')
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1');
+    const zh = (clean.match(/[\u4e00-\u9fa5]/g) || []).length;
+    const en = (clean.match(/[a-zA-Z0-9_-]+/g) || []).length;
+    const words = zh + en;
+    const minutes = Math.max(1, Math.ceil(words / 400));
+    stats = { words, minutes };
+  }
+}
+---
+
+<div class="chapter-header">
+  <h1 id={PAGE_TITLE_ID}>{title}</h1>
+  {stats && (
+    <div class="reading-meta" aria-label="阅读时间与字数估计">
+      <span class="reading-meta-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>约 {stats.minutes} 分钟阅读</span>
+      </span>
+      <span class="reading-meta-divider" aria-hidden="true">·</span>
+      <span class="reading-meta-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+        <span>{stats.words.toLocaleString('zh-CN')} 字</span>
+      </span>
+      <span class="reading-meta-divider" aria-hidden="true">·</span>
+      <span class="reading-meta-tag">原创实战</span>
+    </div>
+  )}
+</div>
+
+<style>
+  @layer starlight.core {
+    .chapter-header {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: var(--sl-text-h1);
+      line-height: var(--sl-line-height-headings);
+      font-weight: 600;
+      color: var(--sl-color-white);
+      margin: 0;
+    }
+    .reading-meta {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .reading-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .reading-meta-item svg {
+      opacity: .75;
+      color: var(--sage);
+    }
+    .reading-meta-divider {
+      opacity: .5;
+    }
+    .reading-meta-tag {
+      font-size: 10px;
+      padding: 1px 6px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--sage);
+      font-weight: 500;
+    }
+  }
+</style>

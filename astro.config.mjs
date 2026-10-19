@@ -50,6 +50,7 @@ export default defineConfig({
       Footer: './src/components/ReaderFooter.astro',
       Pagination: './src/components/ChapterPagination.astro',
       MarkdownContent: './src/components/MarkdownContent.astro',
+      PageTitle: './src/components/PageTitle.astro',
     },
     sidebar: [
       { label: '首页', link: '/' },
