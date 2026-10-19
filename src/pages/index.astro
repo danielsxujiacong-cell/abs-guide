@@ -17,6 +17,50 @@ import release from '../data/release.json';
     <div class="section-heading"><div><p class="eyebrow">四册书，一条清晰的起步路径</p><h2 id="shelf-title">从认识身体，到开始行动。</h2></div><a href="/books/">查看书架 <span aria-hidden="true">↗</span></a></div>
     <Bookshelf />
   </section>
+  <section class="fast-track-section" aria-labelledby="fast-track-title">
+    <div class="section-heading">
+      <div><p class="eyebrow">根据目标快速查阅</p><h2 id="fast-track-title">新手捷径地图</h2></div>
+      <a href="/read/">查看全书完整目录 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="fast-track-grid">
+      <div class="fast-track-card">
+        <div class="fast-track-header">
+          <span class="fast-track-icon">🍳</span>
+          <h3>日常饮食怎么吃</h3>
+        </div>
+        <p>告别水煮菜与鸡胸肉焦虑，教你在外卖、食堂和家常饭里吃出精瘦体型。</p>
+        <ul class="fast-track-links">
+          <li><a href="/volume-02/01-daily-meals/">一日三餐大白话法则 <span>↗</span></a></li>
+          <li><a href="/volume-02/07-eating-out/">外卖与食堂点餐技巧 <span>↗</span></a></li>
+          <li><a href="/volume-02/06-eating-for-fat-loss/">怎么吃才能可持续减脂 <span>↗</span></a></li>
+        </ul>
+      </div>
+      <div class="fast-track-card">
+        <div class="fast-track-header">
+          <span class="fast-track-icon">🧱</span>
+          <h3>零基础自重动作</h3>
+        </div>
+        <p>从最简单的靠墙与低杠开始，建立稳固关节支撑，零门槛搞定推拉腿核心。</p>
+        <ul class="fast-track-links">
+          <li><a href="/volume-03/01-first-workout/">第一次自重训练怎么开始 <span>↗</span></a></li>
+          <li><a href="/volume-03/02-push-ups/">俯卧撑：从推墙到标准 <span>↗</span></a></li>
+          <li><a href="/volume-03/03-pull-ups/">零基础练出第一个引体 <span>↗</span></a></li>
+        </ul>
+      </div>
+      <div class="fast-track-card">
+        <div class="fast-track-header">
+          <span class="fast-track-icon">📅</span>
+          <h3>开箱即用训练计划</h3>
+        </div>
+        <p>每周仅需 2~3 天，每次 30~45 分钟。第 0 周开始起步，稳步渐进 12 周。</p>
+        <ul class="fast-track-links">
+          <li><a href="/volume-04/01-week-zero/">第 0 周：测试与准备 <span>↗</span></a></li>
+          <li><a href="/volume-03/07-weekly-schedule/">打工人极简排班指南 <span>↗</span></a></li>
+          <li><a href="/volume-04/08-beyond-twelve-weeks/">12周之后长期维持模式 <span>↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <section class="reading-note" aria-labelledby="note-title"><div><p class="eyebrow">给第一次开始的你</p><h2 id="note-title">不用一下子改变全部。<br />先读一章，做好一件事。</h2></div><div><p>先读第一册的前两章，弄清自己的起点；再安排一日三餐、尝试第一次训练，最后完成第 0 周准备。暂时没有单杠，也可以先从地面基础动作做起，再去附近的公园找单双杠。</p><p>全书四册共 {chapters.length} 篇原创实战指南已全部完结发布。永久免费、开源、贴合国人日常生活与饮食习惯。没有花哨的套路，只有真正能融入你日常生活的吃练心法。挑一章你最关心的，今天就试着迈出第一步。</p><a href="https://github.com/danielsxujiacong-cell/abs-guide">在 GitHub 阅读与参与共建 ↗</a></div></section>
   <div class="update-line" data-release={release.version}><span class="status-dot" aria-hidden="true"></span><span>{release.date} · v{release.version} · {release.note}</span><a href="https://github.com/danielsxujiacong-cell/abs-guide/blob/main/CHANGELOG.md">更新日志 ↗</a></div>
 </Publication>

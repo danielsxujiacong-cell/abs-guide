@@ -9,13 +9,13 @@ sidebar:
 
 ### 第二册：吃出适合自己的好身材
 
-- [01 普通人的一日三餐到底怎么吃？](01-daily-meals.md) · 已发布
-- [02 热量是什么，为什么影响体重？](02-energy.md) · 已发布
-- [03 蛋白质应该吃多少、怎么吃？](03-protein.md) · 已发布
-- [04 碳水和脂肪真的需要害怕吗？](04-carbs-fats.md) · 已发布
-- [05 想增加肌肉，饮食怎么调整？](05-eating-for-muscle.md) · 已发布
-- [06 想减少脂肪，怎么吃才可持续？](06-eating-for-fat-loss.md) · 已发布
-- [07 外卖、食堂和朋友聚餐怎么吃？](07-eating-out.md) · 已发布
-- [08 蛋白粉、肌酸和常见饮食误区](08-supplements-myths.md) · 已发布
+- [01 普通人的一日三餐到底怎么吃？](01-daily-meals.md)
+- [02 热量是什么，为什么影响体重？](02-energy.md)
+- [03 蛋白质应该吃多少、怎么吃？](03-protein.md)
+- [04 碳水和脂肪真的需要害怕吗？](04-carbs-fats.md)
+- [05 想增加肌肉，饮食怎么调整？](05-eating-for-muscle.md)
+- [06 想减少脂肪，怎么吃才可持续？](06-eating-for-fat-loss.md)
+- [07 外卖、食堂和朋友聚餐怎么吃？](07-eating-out.md)
+- [08 蛋白粉、肌酸和常见饮食误区](08-supplements-myths.md)
 
 [返回全书目录](../index.md)

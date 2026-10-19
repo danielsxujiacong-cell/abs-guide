@@ -73,6 +73,22 @@
   .shelf-book > p { color: var(--muted); font-size: 12px; line-height: 1.9; margin: 9px 0 0; }
   .shelf-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
   .shelf-tag { font-size: 10px; padding: 2px 7px; background: var(--surface); color: var(--muted); border-radius: 4px; line-height: 1.6; border: 1px solid var(--line); }
+  .fast-track-section { padding-block: 25px 65px; border-top: 1px solid var(--line); }
+  .fast-track-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .fast-track-card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 24px 22px; display: flex; flex-direction: column; transition: transform .2s, border-color .2s; }
+  .fast-track-card:hover { transform: translateY(-3px); border-color: var(--sage); }
+  .fast-track-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .fast-track-icon { font-size: 22px; line-height: 1; }
+  .fast-track-header h3 { font-size: 16px; font-weight: 600; margin: 0; letter-spacing: -.02em; }
+  .fast-track-card > p { font-size: 12px; color: var(--muted); line-height: 1.85; margin: 0 0 18px; }
+  .fast-track-links { list-style: none; padding: 0; margin: auto 0 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 14px; }
+  .fast-track-links li { margin: 0; }
+  .fast-track-links a { font-size: 13px; color: var(--ink); text-decoration: none; display: flex; justify-content: space-between; align-items: center; padding-block: 4px; transition: color .15s; }
+  .fast-track-links a:hover { color: var(--sl-color-text-accent); }
+  .fast-track-links a span { color: var(--muted); font-size: 11px; }
+  .back-to-top { position: fixed; bottom: max(24px, env(safe-area-inset-bottom)); right: max(24px, env(safe-area-inset-right)); width: 44px; height: 44px; border-radius: 50%; background: var(--paper); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 4px 14px rgba(0,0,0,0.12); display: grid; place-items: center; cursor: pointer; z-index: 99; transition: transform .18s, background .18s, border-color .18s; }
+  .back-to-top:hover { background: var(--surface); border-color: var(--sage); transform: translateY(-2px); }
+  .back-to-top:active { transform: translateY(1px); }
   .reading-note { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; border-top: 1px solid var(--line); padding-block: 45px; }
   .reading-note h2 { font-size: 25px; line-height: 1.6; letter-spacing: -.03em; font-weight: 550; margin: 0; }
   .reading-note p:not(.eyebrow) { margin: 0 0 15px; color: var(--muted); font-size: 13px; line-height: 2; }
@@ -175,6 +191,10 @@
     .shelf-meta > span:last-child { display: none; }
     .shelf-book > p { font-size: 11px; line-height: 1.8; }
     .shelf-section { padding-bottom: 35px; }
+    .fast-track-section { padding-bottom: 35px; }
+    .fast-track-grid { grid-template-columns: 1fr; gap: 16px; }
+    .fast-track-card { padding: 18px 16px; }
+    .back-to-top { bottom: max(16px, env(safe-area-inset-bottom)); right: max(16px, env(safe-area-inset-right)); width: 40px; height: 40px; }
     .reading-note { grid-template-columns: 1fr; gap: 22px; padding-block: 32px; }
     .reading-note h2 { font-size: 23px; }
     .reading-note p:not(.eyebrow) { font-size: 12px; }

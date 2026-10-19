@@ -14,46 +14,46 @@ sidebar:
 
 ### 第一册：从零开始认识薄肌
 
-- [01 到底什么是薄肌？](volume-01/01-what-is-lean.md) · 已发布
-- [02 我应该从哪里开始？](volume-01/02-where-to-start.md) · 已发布
-- [03 自重健身为什么适合普通人？](volume-01/03-why-calisthenics.md) · 已发布
-- [04 不去健身房，也能练出好身材吗？](volume-01/04-training-without-gym.md) · 已发布
-- [05 新手最容易犯的十个错误](volume-01/05-beginner-mistakes.md) · 已发布
-- [06 多久才能看到身体变化？](volume-01/06-when-results-appear.md) · 已发布
-- [07 如何判断自己有没有进步？](volume-01/07-tracking-progress.md) · 已发布
-- [08 开始健身前的准备清单](volume-01/08-starting-checklist.md) · 已发布
+- [01 到底什么是薄肌？](volume-01/01-what-is-lean.md)
+- [02 我应该从哪里开始？](volume-01/02-where-to-start.md)
+- [03 自重健身为什么适合普通人？](volume-01/03-why-calisthenics.md)
+- [04 不去健身房，也能练出好身材吗？](volume-01/04-training-without-gym.md)
+- [05 新手最容易犯的十个错误](volume-01/05-beginner-mistakes.md)
+- [06 多久才能看到身体变化？](volume-01/06-when-results-appear.md)
+- [07 如何判断自己有没有进步？](volume-01/07-tracking-progress.md)
+- [08 开始健身前的准备清单](volume-01/08-starting-checklist.md)
 
 ### 第二册：吃出适合自己的好身材
 
-- [01 普通人的一日三餐到底怎么吃？](volume-02/01-daily-meals.md) · 已发布
-- [02 热量是什么，为什么影响体重？](volume-02/02-energy.md) · 已发布
-- [03 蛋白质应该吃多少、怎么吃？](volume-02/03-protein.md) · 已发布
-- [04 碳水和脂肪真的需要害怕吗？](volume-02/04-carbs-fats.md) · 已发布
-- [05 想增加肌肉，饮食怎么调整？](volume-02/05-eating-for-muscle.md) · 已发布
-- [06 想减少脂肪，怎么吃才可持续？](volume-02/06-eating-for-fat-loss.md) · 已发布
-- [07 外卖、食堂和朋友聚餐怎么吃？](volume-02/07-eating-out.md) · 已发布
-- [08 蛋白粉、肌酸和常见饮食误区](volume-02/08-supplements-myths.md) · 已发布
+- [01 普通人的一日三餐到底怎么吃？](volume-02/01-daily-meals.md)
+- [02 热量是什么，为什么影响体重？](volume-02/02-energy.md)
+- [03 蛋白质应该吃多少、怎么吃？](volume-02/03-protein.md)
+- [04 碳水和脂肪真的需要害怕吗？](volume-02/04-carbs-fats.md)
+- [05 想增加肌肉，饮食怎么调整？](volume-02/05-eating-for-muscle.md)
+- [06 想减少脂肪，怎么吃才可持续？](volume-02/06-eating-for-fat-loss.md)
+- [07 外卖、食堂和朋友聚餐怎么吃？](volume-02/07-eating-out.md)
+- [08 蛋白粉、肌酸和常见饮食误区](volume-02/08-supplements-myths.md)
 
 ### 第三册：街头健身与自重训练指南
 
-- [01 第一次自重训练，应该从哪里开始？](volume-03/01-first-workout.md) · 已发布
-- [02 俯卧撑：从简单到进阶](volume-03/02-push-ups.md) · 已发布
-- [03 引体向上：如何练出强壮的背部？](volume-03/03-pull-ups.md) · 已发布
-- [04 双杠臂屈伸：胸肩和手臂训练](volume-03/04-dips.md) · 已发布
-- [05 深蹲、弓步与单腿训练](volume-03/05-legs.md) · 已发布
-- [06 腹肌与核心：悬垂举腿及基础训练](volume-03/06-core.md) · 已发布
-- [07 一周应该练几次？如何安排？](volume-03/07-weekly-schedule.md) · 已发布
-- [08 如何提高难度、突破瓶颈并恢复？](volume-03/08-progression-recovery.md) · 已发布
+- [01 第一次自重训练，应该从哪里开始？](volume-03/01-first-workout.md)
+- [02 俯卧撑：从简单到进阶](volume-03/02-push-ups.md)
+- [03 引体向上：如何练出强壮的背部？](volume-03/03-pull-ups.md)
+- [04 双杠臂屈伸：胸肩和手臂训练](volume-03/04-dips.md)
+- [05 深蹲、弓步与单腿训练](volume-03/05-legs.md)
+- [06 腹肌与核心：悬垂举腿及基础训练](volume-03/06-core.md)
+- [07 一周应该练几次？如何安排？](volume-03/07-weekly-schedule.md)
+- [08 如何提高难度、突破瓶颈并恢复？](volume-03/08-progression-recovery.md)
 
 ### 第四册：12 周街头健身实践计划
 
-- [01 第 0 周：开始你的 12 周训练计划](volume-04/01-week-zero.md) · 已发布
-- [02 第 1–2 周：建立训练习惯](volume-04/02-weeks-one-two.md) · 已发布
-- [03 第 3–4 周：掌握基础自重动作](volume-04/03-weeks-three-four.md) · 已发布
-- [04 第 5–6 周：逐渐增加训练难度](volume-04/04-weeks-five-six.md) · 已发布
-- [05 第 7–8 周：检查自己的进步](volume-04/05-weeks-seven-eight.md) · 已发布
-- [06 第 9–10 周：调整训练和饮食](volume-04/06-weeks-nine-ten.md) · 已发布
-- [07 第 11–12 周：完成第一个训练周期](volume-04/07-weeks-eleven-twelve.md) · 已发布
-- [08 12 周之后，如何继续进步？](volume-04/08-beyond-twelve-weeks.md) · 已发布
+- [01 第 0 周：开始你的 12 周训练计划](volume-04/01-week-zero.md)
+- [02 第 1–2 周：建立训练习惯](volume-04/02-weeks-one-two.md)
+- [03 第 3–4 周：掌握基础自重动作](volume-04/03-weeks-three-four.md)
+- [04 第 5–6 周：逐渐增加训练难度](volume-04/04-weeks-five-six.md)
+- [05 第 7–8 周：检查自己的进步](volume-04/05-weeks-seven-eight.md)
+- [06 第 9–10 周：调整训练和饮食](volume-04/06-weeks-nine-ten.md)
+- [07 第 11–12 周：完成第一个训练周期](volume-04/07-weeks-eleven-twelve.md)
+- [08 12 周之后，如何继续进步？](volume-04/08-beyond-twelve-weeks.md)
 
 [项目介绍与贡献方式](../../../README.md) · [科学资料登记](../../../sources/references.md) · [内容许可](../../../CONTENT_LICENSE.md)

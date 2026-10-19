@@ -95,7 +95,6 @@ for (const book of books) {
     for (const file of ['README.md', 'src/content/docs/index.md', `src/content/docs/${book.id}/index.md`]) {
       const line = read(file).split('\n').find((line) => line.startsWith('- ') && line.includes(label));
       assert.ok(line, `Missing catalog entry: ${file}: ${label}`);
-      assert.ok(line.includes(c.status === 'published' ? '已发布' : '计划中'), `Catalog status: ${file}: ${label}`);
       assert.equal(line.includes(']('), c.status === 'published', `Catalog clickability: ${file}: ${label}`);
       if (c.status === 'published') assert.ok(line.includes(file.endsWith(`${book.id}/index.md`) ? c.file.split('/')[1] : c.file), `Catalog destination: ${file}`);
     }

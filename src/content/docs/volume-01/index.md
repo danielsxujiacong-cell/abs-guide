@@ -9,13 +9,13 @@ sidebar:
 
 ### 第一册：从零开始认识薄肌
 
-- [01 到底什么是薄肌？](01-what-is-lean.md) · 已发布
-- [02 我应该从哪里开始？](02-where-to-start.md) · 已发布
-- [03 自重健身为什么适合普通人？](03-why-calisthenics.md) · 已发布
-- [04 不去健身房，也能练出好身材吗？](04-training-without-gym.md) · 已发布
-- [05 新手最容易犯的十个错误](05-beginner-mistakes.md) · 已发布
-- [06 多久才能看到身体变化？](06-when-results-appear.md) · 已发布
-- [07 如何判断自己有没有进步？](07-tracking-progress.md) · 已发布
-- [08 开始健身前的准备清单](08-starting-checklist.md) · 已发布
+- [01 到底什么是薄肌？](01-what-is-lean.md)
+- [02 我应该从哪里开始？](02-where-to-start.md)
+- [03 自重健身为什么适合普通人？](03-why-calisthenics.md)
+- [04 不去健身房，也能练出好身材吗？](04-training-without-gym.md)
+- [05 新手最容易犯的十个错误](05-beginner-mistakes.md)
+- [06 多久才能看到身体变化？](06-when-results-appear.md)
+- [07 如何判断自己有没有进步？](07-tracking-progress.md)
+- [08 开始健身前的准备清单](08-starting-checklist.md)
 
 [返回全书目录](../index.md)
